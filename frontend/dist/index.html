@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#080D18">
   <title>ZEUS VPN</title>
   <link rel="stylesheet" href="style.css">
@@ -119,33 +119,43 @@
 
           <div class="home-grid">
             <section class="surface connection-stage">
-              <div class="stage-ornament stage-ornament-left"></div><div class="stage-ornament stage-ornament-right"></div>
               <div class="stage-header"><span class="eyebrow" data-i18n="connectionState">CONNECTION STATE</span><span class="stage-mode" id="status-mode">SYSTEM PROXY</span></div>
               <div class="command-wrap">
-                <div class="command-halo"></div>
                 <button class="connection-command" id="orb" data-status="disconnected" type="button" aria-label="Connect" aria-describedby="status-text status-sub">
-                  <span class="solar-month-ring" id="solar-month-ring" role="img" aria-label="ماه‌های تقویم فارسی"><span class="solar-month" style="--angle:0deg;--counter-angle:0deg"><b>فروردین</b></span><span class="solar-month" style="--angle:30deg;--counter-angle:-30deg"><b>اردیبهشت</b></span><span class="solar-month" style="--angle:60deg;--counter-angle:-60deg"><b>خرداد</b></span><span class="solar-month" style="--angle:90deg;--counter-angle:-90deg"><b>تیر</b></span><span class="solar-month" style="--angle:120deg;--counter-angle:-120deg"><b>مرداد</b></span><span class="solar-month" style="--angle:150deg;--counter-angle:-150deg"><b>شهریور</b></span><span class="solar-month" style="--angle:180deg;--counter-angle:-180deg"><b>مهر</b></span><span class="solar-month" style="--angle:210deg;--counter-angle:-210deg"><b>آبان</b></span><span class="solar-month" style="--angle:240deg;--counter-angle:-240deg"><b>آذر</b></span><span class="solar-month" style="--angle:270deg;--counter-angle:-270deg"><b>دی</b></span><span class="solar-month" style="--angle:300deg;--counter-angle:-300deg"><b>بهمن</b></span><span class="solar-month" style="--angle:330deg;--counter-angle:-330deg"><b>اسفند</b></span></span>
-                  <span class="command-frame"></span><span class="command-mark"><span class="helios-sun" aria-hidden="true"><span class="helios-rays"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="helios-disk"></span><svg class="helios-inscription" viewBox="0 0 160 160" aria-hidden="true"><defs><path id="helios-inscription-path" d="M 80,80 m -58,0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0"></path></defs><text><textPath href="#helios-inscription-path" startOffset="0%">ΖΕΥΣ · ΦΩΣ · ΙΣΧΥΣ · ΑΣΦΑΛΕΙΑ · </textPath></text></svg></span><svg class="command-bolt" viewBox="0 0 64 88" aria-hidden="true"><path d="M38 2 9 49h20l-7 37 33-53H34L38 2Z"></path></svg></span><span class="command-label" id="command-label" data-i18n="connect">Connect</span>
+                  <svg class="guardian-crest" viewBox="0 0 200 210" aria-hidden="true" focusable="false">
+                    <defs>
+                      <linearGradient id="guardian-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe9b4"/><stop offset=".45" stop-color="#ae8550"/><stop offset="1" stop-color="#e5cc8c"/></linearGradient>
+                      <linearGradient id="guardian-stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#37334b"/><stop offset="1" stop-color="#101a29"/></linearGradient>
+                    </defs>
+                    <path class="guardian-shadow" d="M100 13 171 44 165 133 100 196 35 133 29 44Z"/>
+                    <path class="guardian-frame" d="M100 13 171 44 165 133 100 196 35 133 29 44Z"/>
+                    <path class="guardian-inner" d="M100 29 156 53 151 125 100 176 49 125 44 53Z"/>
+                    <path class="guardian-pediment" d="M61 77 100 55 139 77H61Z M65 82H135 M68 136H132 M61 144H139"/>
+                    <path class="guardian-columns" d="M72 88v42 M85 88v42 M100 88v42 M115 88v42 M128 88v42"/>
+                    <path class="guardian-detail" d="M100 34v10 M54 59l6 3 M146 59l-6 3 M100 165v8"/>
+                  </svg>
+                  <span class="command-action"><strong class="command-label" id="command-label" data-i18n="connect">Connect</strong><span class="command-arrow" aria-hidden="true">→</span></span>
                 </button>
               </div>
-              <div class="connection-copy" role="status" aria-live="polite" aria-atomic="true"><h2 id="status-text" data-i18n="stateDisconnected">Not connected</h2><p id="status-sub" data-i18n="tapToConnect">Choose a location, then establish protection.</p><span class="session-clock" id="session-clock"></span></div>
+              <div class="connection-copy" role="status" aria-live="polite" aria-atomic="true"><span class="connection-indicator" aria-hidden="true"></span><div><h2 id="status-text" data-i18n="stateDisconnected">Disconnected</h2><p id="status-sub" data-i18n="tapToConnect">Choose a location, then establish protection.</p><span class="session-clock" id="session-clock"></span></div></div>
               <div class="stage-footer"><span class="stage-footer-line"></span><span data-i18n="actualStateOnly">Actual network state only</span><span class="stage-footer-line"></span></div>
             </section>
 
             <div class="home-side">
               <div class="banner" id="banner" role="status" aria-live="polite" hidden></div>
-              <section class="surface route-card">
-                <div class="surface-heading"><div><p class="eyebrow" data-i18n="protectedRoute">PROTECTED ROUTE</p><h2 data-i18n="selectedLocation">Selected location</h2></div><button class="text-action" id="btn-location" type="button"><span data-i18n="change">Change</span><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button></div>
-                <div class="route-value"><span class="flag" id="loc-flag"></span><div><strong id="loc-name">Recommended</strong><small id="loc-ping" class="ping" hidden></small></div></div>
-                <div class="route-meta"><span data-i18n="connectionMode">Connection mode</span><b id="home-route-mode">System Proxy</b></div>
-                <div class="route-meta"><span data-i18n="exitIp">Exit IP</span><b class="technical-value" id="exit-ip">—</b></div>
+              <section class="surface route-card circular-instrument" aria-labelledby="route-title">
+                <div class="instrument-heading"><div><p class="eyebrow" data-i18n="protectedRoute">PROTECTED ROUTE</p><h2 id="route-title" data-i18n="selectedLocation">Selected location</h2></div><button class="text-action" id="btn-location" type="button"><span data-i18n="change">Change</span><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button></div>
+                <div class="route-orbit">
+                  <div class="route-center"><span class="flag" id="loc-flag" aria-hidden="true"></span><strong id="loc-name" dir="auto">Recommended</strong><small id="loc-ping" class="ping" hidden></small><div class="route-detail"><span data-i18n="connectionMode">Connection mode</span><b id="home-route-mode">System Proxy</b></div><div class="route-detail"><span data-i18n="exitIp">Exit IP</span><b class="technical-value" id="exit-ip">—</b></div></div>
+                </div>
               </section>
-
-              <section class="surface quota-card">
-                <div class="surface-heading"><div><p class="eyebrow" data-i18n="accountQuota">ACCOUNT QUOTA</p><h2 data-i18n="monthlyData">Monthly data</h2></div><span class="quota-seal">GB</span></div>
-                <div class="quota-value" id="quota-text">—</div>
-                <div class="quota-bar"><span id="quota-fill"></span></div>
-                <div class="quota-meta"><span data-i18n="remaining">Remaining</span><span id="total-row" hidden><span data-i18n="allAccounts">All accounts</span> · <b id="total-text">—</b></span></div>
+              <section class="surface quota-card circular-instrument" aria-labelledby="quota-title">
+                <div class="instrument-heading"><div><p class="eyebrow" data-i18n="accountQuota">ACCOUNT QUOTA</p><h2 id="quota-title" data-i18n="monthlyData">Monthly data</h2></div></div>
+                <div class="quota-orbit" id="quota-meter" role="group" aria-labelledby="quota-title">
+                  <svg class="quota-dial" viewBox="0 0 240 240" aria-hidden="true"><circle class="quota-track" cx="120" cy="120" r="105"/><circle id="quota-ring" class="quota-progress" cx="120" cy="120" r="105" pathLength="100"/></svg>
+                  <div class="quota-center"><span class="quota-caption" data-i18n="remaining">Remaining</span><strong id="quota-text" dir="ltr">—</strong><span class="quota-detail"><span data-i18n="total">Total</span> <b id="quota-limit" dir="ltr">—</b></span><span class="quota-detail"><span data-i18n="used">Used</span> <b id="quota-used" dir="ltr">—</b></span></div>
+                </div>
+                <div class="quota-meta"><span id="total-row" hidden><span data-i18n="allAccounts">All accounts</span> · <b id="total-text">—</b></span></div>
               </section>
             </div>
 

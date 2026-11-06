@@ -11,7 +11,7 @@ const translations = {
     accountAccess: "ACCOUNT ACCESS", welcomeToZeus: "Welcome to ZEUS", signInMozilla: "Sign in with your Mozilla account", email: "Email", password: "Password", signIn: "Sign in", signInWithFirefox: "Sign in with Firefox", cancel: "Cancel", loginHint: "The Mozilla sign-in page opens inside this window.", freeMozilla: "Free with any Mozilla account · 50 GB per month", createAccount: "Create a free account",
     navigation: "NAVIGATION", primaryNavigation: "Primary navigation", mobileNavigation: "Mobile navigation", liveChart: "Live session traffic chart", commandCenter: "Command Center", locations: "Locations", statistics: "Statistics", activity: "Activity", settings: "Settings", home: "Home", protectedByMozilla: "Protected by Mozilla",
     commandCenterEyebrow: "COMMAND CENTER", commandCenterTitle: "Your protection, at a glance.", commandCenterLead: "A clear view of the connection that protects your digital life.", connectionState: "CONNECTION STATE", connect: "Connect", disconnect: "Disconnect", stateDisconnected: "Disconnected", stateConnecting: "Connecting", stateConnected: "Connected", stateDisconnecting: "Disconnecting", stateReconnecting: "Reconnecting", tapToConnect: "Choose a location, then establish protection.", securingConnection: "Securing your connection", protectedNow: "Your traffic is protected", disconnecting: "Closing the secure route", reconnecting: "Connection lost, retrying", actualStateOnly: "Actual network state only",
-    protectedRoute: "PROTECTED ROUTE", selectedLocation: "Selected location", change: "Change", connectionMode: "Connection mode", systemProxy: "System Proxy", fullVpn: "Full VPN", exitIp: "Exit IP", accountQuota: "ACCOUNT QUOTA", monthlyData: "Monthly data", remaining: "Remaining", allAccounts: "All accounts", liveTraffic: "LIVE TRAFFIC", currentSession: "Current session", openObservatory: "Open observatory", download: "Download", upload: "Upload", sessionTotal: "Session total", liveOneSecond: "Live · one-second samples", protectionMode: "PROTECTION MODE", chooseTrafficRoute: "Choose how traffic leaves this device.",
+    protectedRoute: "PROTECTED ROUTE", selectedLocation: "Selected location", change: "Change", connectionMode: "Connection mode", systemProxy: "System Proxy", fullVpn: "Full VPN", exitIp: "Exit IP", accountQuota: "ACCOUNT QUOTA", monthlyData: "Monthly data", remaining: "Remaining", used: "Used", allAccounts: "All accounts", liveTraffic: "LIVE TRAFFIC", currentSession: "Current session", openObservatory: "Open observatory", download: "Download", upload: "Upload", sessionTotal: "Session total", liveOneSecond: "Live · one-second samples", protectionMode: "PROTECTION MODE", chooseTrafficRoute: "Choose how traffic leaves this device.",
     locationsEyebrow: "NETWORK ATLAS", locationsTitle: "Choose your location.", locationsLead: "Select a real server route. Latency is measured only when requested.", measureLatency: "Measure latency", searchLocations: "Search countries or cities", serverDataActual: "Server data from the application", loadingServers: "Loading servers…", couldNotLoadServers: "Could not load servers.", noMatches: "No matches", fastestAvailable: "Fastest available server", cities: "cities", city: "city", timeout: "timeout",
     statisticsEyebrow: "NETWORK OBSERVATORY", statisticsTitle: "See what ZEUS is carrying.", statisticsLead: "Live, current-session measurements from the existing tunnel.", networkAnalytics: "NETWORK ANALYTICS", analyticsTitle: "A single view of your network activity.", analyticsLead: "Recorded destinations and live tunnel measurements, kept separate and factual.", overview: "OVERVIEW", totalUploaded: "Total uploaded", totalDownloaded: "Total downloaded", totalTraffic: "Total traffic", destinationIPs: "Destination IPs", destinationCountries: "Destination countries", activeSession: "Active session", recordedUsage: "Recorded usage", detectedRecords: "Detected in recorded hosts", countryMetadataUnavailable: "Metadata unavailable", countryMetadataDetail: "The usage API records destinations, but does not provide reliable country enrichment.", trafficDistribution: "TRAFFIC DISTRIBUTION", uploadDownloadMix: "Upload versus download", destinationDistribution: "DESTINATION DISTRIBUTION", relativeDestinationShare: "Relative traffic share by destination", topDestinations: "Top recorded destinations", countryDistribution: "COUNTRY DISTRIBUTION", dataBoundary: "Data boundary", ipObservatory: "IP ADDRESS OBSERVATORY", destinationRecords: "Recorded destination records", hostRecordsOnly: "Hosts and IPs from the usage ledger", searchIpHostname: "Search IP or hostname", sortBy: "Sort by", sortTraffic: "Traffic volume", sortDestination: "Destination", sortIp: "IP address", sortCountryUnavailable: "Country (not available)", destination: "Destination", ipAddress: "IP address", country: "Country", traffic: "Traffic", breakdown: "Breakdown", relativeShare: "share", ipTag: "IP", hostTag: "HOST", liveSession: "LIVE SESSION", sessionTraffic: "SESSION TRAFFIC", notConnected: "No active session", oneSecondSamples: "1s samples", combinedTraffic: "Combined traffic", chartAwaiting: "Live samples will appear when the tunnel is active.", downloadRate: "Download rate", uploadRate: "Upload rate", sessionDuration: "Session duration", quotaRemaining: "Quota remaining", historyBoundary: "HISTORY BOUNDARY", historyUnavailable: "Historical time series unavailable", historyUnavailableDetail: "This version exposes live session samples and recorded destinations, not daily, weekly or monthly buckets.", recordedDestinations: "RECORDED DESTINATIONS", whereTrafficWent: "Where recorded traffic went.", retainedUsage: "Retained usage data", destinationNote: "Cumulative destination totals with last activity, not a time-series history.", windowsApplications: "WINDOWS APPLICATIONS", applicationTraffic: "Application traffic", windowsOnly: "Windows only",
     activityEyebrow: "ACTIVITY LEDGER", activityTitle: "A factual record of the application.", activityLead: "Logs and notices from the application — without invented history.", copyLogs: "Copy logs", applicationLogs: "APPLICATION LOGS", diagnosticRecord: "Diagnostic record", openLogFile: "Open log file", logsEmpty: "Open logs to load the current diagnostic record.", destinationUsage: "Destination usage", searchDestinations: "Search destinations", total: "Total", clearHistory: "Clear history", usageUnavailable: "Usage data unavailable", usageUnavailableDetail: "The application could not read retained destination usage.", retryUsage: "Retry usage", logsUnavailable: "Logs unavailable", logsUnavailableDetail: "The application could not read its diagnostic record.", retryLogs: "Retry logs",
@@ -26,7 +26,7 @@ const translations = {
     accountAccess: "دسترسی حساب", welcomeToZeus: "به زئوس خوش آمدید", signInMozilla: "با حساب موزیلا وارد شوید", email: "ایمیل", password: "رمز عبور", signIn: "ورود", signInWithFirefox: "ورود با فایرفاکس", cancel: "لغو", loginHint: "صفحه ورود موزیلا داخل همین پنجره باز می‌شود.", freeMozilla: "رایگان با هر حساب موزیلا · ۵۰ گیگابایت در ماه", createAccount: "ساخت حساب رایگان",
     navigation: "ناوبری", primaryNavigation: "ناوبری اصلی", mobileNavigation: "ناوبری موبایل", liveChart: "نمودار ترافیک نشست زنده", commandCenter: "مرکز فرماندهی", locations: "موقعیت‌ها", statistics: "آمار", activity: "فعالیت", settings: "تنظیمات", home: "خانه", protectedByMozilla: "حفاظت‌شده توسط موزیلا",
     commandCenterEyebrow: "مرکز فرماندهی", commandCenterTitle: "حفاظت شما، در یک نگاه.", commandCenterLead: "نمایی روشن از ارتباطی که از زندگی دیجیتال شما محافظت می‌کند.", connectionState: "وضعیت اتصال", connect: "اتصال", disconnect: "قطع اتصال", stateDisconnected: "متصل نیست", stateConnecting: "در حال اتصال", stateConnected: "متصل", stateDisconnecting: "در حال قطع اتصال", stateReconnecting: "در حال اتصال دوباره", tapToConnect: "موقعیت را انتخاب کنید و حفاظت را فعال کنید.", securingConnection: "در حال ایمن‌سازی اتصال", protectedNow: "ترافیک شما محافظت می‌شود", disconnecting: "در حال بستن مسیر امن", reconnecting: "اتصال از دست رفت؛ تلاش دوباره", actualStateOnly: "فقط وضعیت واقعی شبکه",
-    protectedRoute: "مسیر محافظت‌شده", selectedLocation: "موقعیت انتخاب‌شده", change: "تغییر", connectionMode: "حالت اتصال", systemProxy: "پروکسی سیستم", fullVpn: "VPN کامل", exitIp: "IP خروجی", accountQuota: "سهمیه حساب", monthlyData: "داده ماهانه", remaining: "باقی‌مانده", allAccounts: "همه حساب‌ها", liveTraffic: "ترافیک زنده", currentSession: "نشست فعلی", openObservatory: "باز کردن رصدخانه", download: "دریافت", upload: "ارسال", sessionTotal: "مجموع نشست", liveOneSecond: "زنده · نمونه‌های یک‌ثانیه‌ای", protectionMode: "حالت حفاظت", chooseTrafficRoute: "نحوه خروج ترافیک از این دستگاه را انتخاب کنید.",
+    protectedRoute: "مسیر محافظت‌شده", selectedLocation: "موقعیت انتخاب‌شده", change: "تغییر", connectionMode: "حالت اتصال", systemProxy: "پروکسی سیستم", fullVpn: "VPN کامل", exitIp: "IP خروجی", accountQuota: "سهمیه حساب", monthlyData: "داده ماهانه", remaining: "باقی‌مانده", used: "مصرف‌شده", allAccounts: "همه حساب‌ها", liveTraffic: "ترافیک زنده", currentSession: "نشست فعلی", openObservatory: "باز کردن رصدخانه", download: "دریافت", upload: "ارسال", sessionTotal: "مجموع نشست", liveOneSecond: "زنده · نمونه‌های یک‌ثانیه‌ای", protectionMode: "حالت حفاظت", chooseTrafficRoute: "نحوه خروج ترافیک از این دستگاه را انتخاب کنید.",
     locationsEyebrow: "اطلس شبکه", locationsTitle: "موقعیت خود را انتخاب کنید.", locationsLead: "یک مسیر واقعی سرور را انتخاب کنید. تأخیر فقط در صورت درخواست اندازه‌گیری می‌شود.", measureLatency: "اندازه‌گیری تأخیر", searchLocations: "جست‌وجوی کشور یا شهر", serverDataActual: "اطلاعات سرور از برنامه", loadingServers: "در حال بارگذاری سرورها…", couldNotLoadServers: "بارگذاری سرورها ممکن نشد.", noMatches: "موردی پیدا نشد", fastestAvailable: "سریع‌ترین سرور موجود", cities: "شهر", city: "شهر", timeout: "پایان زمان",
     statisticsEyebrow: "رصدخانه شبکه", statisticsTitle: "ببینید زئوس چه چیزی را حمل می‌کند.", statisticsLead: "اندازه‌گیری زنده نشست فعلی از تونل موجود.", networkAnalytics: "تحلیل شبکه", analyticsTitle: "یک نمای یکپارچه از فعالیت شبکه شما.", analyticsLead: "مقصدهای ثبت‌شده و اندازه‌گیری زنده تونل؛ جدا و واقعی.", overview: "نمای کلی", totalUploaded: "مجموع ارسال", totalDownloaded: "مجموع دریافت", totalTraffic: "مجموع ترافیک", destinationIPs: "IPهای مقصد", destinationCountries: "کشورهای مقصد", activeSession: "نشست فعال", recordedUsage: "مصرف ثبت‌شده", detectedRecords: "شناسایی‌شده در مقصدهای ثبت‌شده", countryMetadataUnavailable: "فراداده در دسترس نیست", countryMetadataDetail: "API مصرف مقصدها را ثبت می‌کند، اما غنی‌سازی مطمئن کشور را ارائه نمی‌دهد.", trafficDistribution: "توزیع ترافیک", uploadDownloadMix: "مقایسه ارسال و دریافت", destinationDistribution: "توزیع مقصدها", relativeDestinationShare: "سهم نسبی ترافیک بر اساس مقصد", topDestinations: "مقصدهای برتر ثبت‌شده", countryDistribution: "توزیع کشورها", dataBoundary: "مرز داده", ipObservatory: "رصدخانه آدرس IP", destinationRecords: "رکوردهای مقصد ثبت‌شده", hostRecordsOnly: "نام میزبان و IP از دفتر مصرف", searchIpHostname: "جست‌وجوی IP یا نام میزبان", sortBy: "مرتب‌سازی بر اساس", sortTraffic: "حجم ترافیک", sortDestination: "مقصد", sortIp: "آدرس IP", sortCountryUnavailable: "کشور (در دسترس نیست)", destination: "مقصد", ipAddress: "آدرس IP", country: "کشور", traffic: "ترافیک", breakdown: "تفکیک", relativeShare: "سهم", ipTag: "IP", hostTag: "میزبان", liveSession: "نشست زنده", sessionTraffic: "ترافیک نشست", notConnected: "نشست فعالی وجود ندارد", oneSecondSamples: "نمونه‌های ۱ ثانیه‌ای", combinedTraffic: "ترافیک ترکیبی", chartAwaiting: "نمونه‌های زنده هنگام فعال بودن تونل نمایش داده می‌شوند.", downloadRate: "سرعت دریافت", uploadRate: "سرعت ارسال", sessionDuration: "مدت نشست", quotaRemaining: "سهمیه باقی‌مانده", historyBoundary: "مرز تاریخچه", historyUnavailable: "سری زمانی تاریخی در دسترس نیست", historyUnavailableDetail: "این نسخه نمونه‌های زنده نشست و مقصدهای ثبت‌شده را دارد، نه داده‌های روزانه، هفتگی یا ماهانه.", recordedDestinations: "مقصدهای ثبت‌شده", whereTrafficWent: "ترافیک ثبت‌شده به کجا رفته است.", retainedUsage: "داده مصرف نگه‌داری‌شده", destinationNote: "مجموع تجمعی مقصدها با آخرین فعالیت؛ نه تاریخچه سری زمانی.", windowsApplications: "برنامه‌های ویندوز", applicationTraffic: "ترافیک برنامه‌ها", windowsOnly: "فقط ویندوز",
     activityEyebrow: "دفتر فعالیت", activityTitle: "گزارش واقعی برنامه.", activityLead: "لاگ‌ها و اعلان‌های برنامه — بدون تاریخچه ساختگی.", copyLogs: "کپی لاگ‌ها", applicationLogs: "لاگ‌های برنامه", diagnosticRecord: "گزارش عیب‌یابی", openLogFile: "باز کردن فایل لاگ", logsEmpty: "برای بارگذاری گزارش فعلی، لاگ‌ها را باز کنید.", destinationUsage: "مصرف مقصدها", searchDestinations: "جست‌وجوی مقصدها", total: "مجموع", clearHistory: "پاک‌کردن تاریخچه", usageUnavailable: "داده مصرف در دسترس نیست", usageUnavailableDetail: "برنامه نتوانست مصرف مقصدهای نگه‌داری‌شده را بخواند.", retryUsage: "تلاش دوباره برای مصرف", logsUnavailable: "لاگ‌ها در دسترس نیستند", logsUnavailableDetail: "برنامه نتوانست گزارش عیب‌یابی را بخواند.", retryLogs: "تلاش دوباره برای لاگ‌ها",
@@ -50,6 +50,7 @@ let servers = [];
 let latency = {};
 let openCountry = null;
 let timerHandle = null;
+let liveQuotaSample = null;
 let lastStats = { up: 0, down: 0, upRate: 0, downRate: 0, quotaLimit: 0, quotaLeft: 0 };
 let previousStats = { up: 0, down: 0 };
 let sessionSamples = [];
@@ -729,16 +730,6 @@ function askConfirm(message, title = t("confirmation")) {
   return new Promise((resolve) => { confirmResolve = resolve; });
 }
 
-const PERSIAN_MONTHS = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
-const ENGLISH_MONTHS = ["Farvardin", "Ordibehesht", "Khordad", "Tir", "Mordad", "Shahrivar", "Mehr", "Aban", "Azar", "Dey", "Bahman", "Esfand"];
-function renderSolarMonthRing() {
-  const ring = $("#solar-month-ring");
-  if (!ring) return;
-  const months = locale === "fa" ? PERSIAN_MONTHS : ENGLISH_MONTHS;
-  Array.from(ring.querySelectorAll(".solar-month b")).forEach((el, index) => { el.textContent = months[index]; });
-  ring.setAttribute("aria-label", locale === "fa" ? `ماه‌های تقویم فارسی: ${PERSIAN_MONTHS.join("، ")}` : `Persian calendar months: ${ENGLISH_MONTHS.join(", ")}`);
-}
-
 function applyLocale() {
   document.documentElement.lang = locale === "fa" ? "fa" : "en";
   document.documentElement.dir = locale === "fa" ? "rtl" : "ltr";
@@ -753,7 +744,6 @@ function applyLocale() {
   }
   if ($("#set-language")) $("#set-language").value = locale;
   if ($("#set-effects")) $("#set-effects").checked = effectsEnabled;
-  renderSolarMonthRing();
   renderMapLocale();
   updateBreadcrumb();
 }
@@ -915,17 +905,20 @@ function renderHome() {
   const visualStatus = hasError && status === "disconnected" ? "error" : status;
   const statusKeys = {
     disconnected: ["stateDisconnected", "tapToConnect", "connect"],
-    connecting: ["stateConnecting", "securingConnection", "connect"],
+    connecting: ["stateConnecting", "securingConnection", "stateConnecting"],
     connected: ["stateConnected", "protectedNow", "disconnect"],
-    disconnecting: ["stateDisconnecting", "disconnecting", "disconnect"],
+    disconnecting: ["stateDisconnecting", "disconnecting", "stateDisconnecting"],
     reconnecting: ["stateReconnecting", "reconnecting", "disconnect"],
   }[status] || ["stateDisconnected", "tapToConnect", "connect"];
   $("#orb").dataset.status = visualStatus;
+  document.body.dataset.connectionStatus = visualStatus;
+  $("#orb").disabled = status === "connecting" || status === "disconnecting";
+  $("#orb").setAttribute("aria-busy", String(status === "connecting" || status === "disconnecting"));
   $("#orb").setAttribute("aria-label", t(statusKeys[2]));
   $("#command-label").textContent = t(statusKeys[2]);
-  $("#status-text").textContent = t(statusKeys[0]);
+  $("#status-text").textContent = t(visualStatus === "error" ? "error" : statusKeys[0]);
   $("#status-sub").textContent = hasError ? snap.error : status === "reconnecting" && snap.settings.kill_switch ? `${t("reconnecting")} · ${t("killSwitch")}` : t(statusKeys[1]);
-  $("#home-connection-label").textContent = t(statusKeys[0]);
+  $("#home-connection-label").textContent = t(visualStatus === "error" ? "error" : statusKeys[0]);
   $("#status-mode").textContent = t(snap.settings.mode === "tun" ? "fullVpn" : "systemProxy").toUpperCase();
   $("#home-route-mode").textContent = t(snap.settings.mode === "tun" ? "fullVpn" : "systemProxy");
   document.body.classList.toggle("connected", status === "connected");
@@ -957,26 +950,9 @@ function renderHome() {
   ping.className = `ping ${pingClass(locationPing)}`;
   ping.textContent = pingText(locationPing);
   ping.hidden = locationPing == null;
-  $("#exit-ip").textContent = status === "connected" ? (snap.exitIp || t("checkingData")) : "—";
+  $("#exit-ip").textContent = status === "connected" ? (snap.exitIp || "—") : "—";
 
-  const accounts = snap.accounts || [];
-  const active = accounts.find((account) => account.active) || {};
-  const limit = snap.quotaLimit || active.quotaLimit || 0;
-  const left = snap.quotaLimit ? snap.quotaLeft : active.quotaLeft || 0;
-  if (limit > 0) {
-    $("#quota-text").textContent = `${fmtBytes(left)} ${t("remaining").toLowerCase()} · ${fmtBytes(limit)}`;
-    $("#quota-fill").style.width = `${Math.min(100, ((limit - left) / limit) * 100).toFixed(1)}%`;
-  } else {
-    $("#quota-text").textContent = t("noQuota");
-    $("#quota-fill").style.width = "0";
-  }
-  const known = accounts.filter((account) => account.quotaLimit > 0);
-  $("#total-row").hidden = accounts.length < 2 || !known.length;
-  if (known.length) {
-    const totalLeft = known.reduce((sum, account) => sum + (account.exhausted ? 0 : account.quotaLeft), 0);
-    const totalLimit = known.reduce((sum, account) => sum + account.quotaLimit, 0);
-    $("#total-text").textContent = `${fmtBytes(totalLeft)} / ${fmtBytes(totalLimit)}`;
-  }
+  renderHomeQuota();
   const banner = $("#banner");
   if (status === "reconnecting" && snap.settings.kill_switch) {
     banner.className = "banner info";
@@ -994,6 +970,44 @@ function renderHome() {
     $("#banner-elevate").onclick = elevate;
   } else banner.hidden = true;
   renderLiveMetrics();
+}
+
+// Stats has no unlimited marker: a non-positive limit means unknown, not unlimited.
+function renderHomeQuota() {
+  if (!snap) return;
+  const accounts = snap.accounts || [];
+  const active = accounts.find((account) => account.active) || {};
+  const sample = liveQuotaSample && snap.status === "connected" ? liveQuotaSample : null;
+  const rawLimit = sample ? sample.limit : (snap.quotaLimit || active.quotaLimit);
+  const rawLeft = sample ? sample.left : (snap.quotaLimit ? snap.quotaLeft : active.quotaLeft);
+  const limit = Number(rawLimit), left = Number(rawLeft);
+  const known = rawLimit != null && rawLeft != null && Number.isFinite(limit) && Number.isFinite(left) && limit > 0 && left >= 0;
+  const meter = $("#quota-meter"), ring = $("#quota-ring");
+  $("#quota-text").textContent = known ? fmtBytes(left) : "—";
+  $("#quota-limit").textContent = known ? fmtBytes(limit) : "—";
+  $("#quota-used").textContent = known ? fmtBytes(Math.max(0, limit - left)) : "—";
+  // Remove the arc immediately when a value becomes unknown or zero; a
+  // lingering animated arc would imply a quota that is no longer available.
+  ring.style.transition = known && left > 0 ? "" : "none";
+  ring.style.strokeDasharray = known ? `${Math.max(0, Math.min(100, left / limit * 100)).toFixed(2)} 100` : "0 100";
+  ring.style.opacity = known && left > 0 ? "1" : "0";
+  if (known) {
+    meter.setAttribute("role", "meter");
+    meter.setAttribute("aria-valuemin", "0"); meter.setAttribute("aria-valuemax", "100");
+    meter.setAttribute("aria-valuenow", String(Math.max(0, Math.min(100, Math.round(left / limit * 100)))));
+    meter.setAttribute("aria-valuetext", `${t("remaining")}: ${fmtBytes(left)}; ${t("total")}: ${fmtBytes(limit)}; ${t("used")}: ${fmtBytes(Math.max(0, limit - left))}`);
+  } else {
+    meter.setAttribute("role", "group");
+    for (const attr of ["aria-valuemin", "aria-valuemax", "aria-valuenow", "aria-valuetext"]) meter.removeAttribute(attr);
+    $("#quota-text").textContent = t("noQuota");
+  }
+  const knownAccounts = accounts.filter((account) => account.quotaLimit > 0);
+  $("#total-row").hidden = accounts.length < 2 || !knownAccounts.length;
+  if (knownAccounts.length) {
+    const totalLeft = knownAccounts.reduce((sum, account) => sum + (account.exhausted ? 0 : account.quotaLeft), 0);
+    const totalLimit = knownAccounts.reduce((sum, account) => sum + account.quotaLimit, 0);
+    $("#total-text").textContent = `${fmtBytes(totalLeft)} / ${fmtBytes(totalLimit)}`;
+  }
 }
 
 function renderSessionDuration() {
@@ -1398,7 +1412,9 @@ async function elevate() {
   try { await api().RestartAsAdmin(); } catch (error) { toast(errText(error)); }
 }
 async function refreshSnapshot() {
+  const previous = snap;
   snap = await api().GetSnapshot();
+  if (!previous || previous.account !== snap.account || previous.email !== snap.email || snap.status !== "connected") liveQuotaSample = null;
   render();
   return snap;
 }
@@ -1592,6 +1608,7 @@ function handleState(state) {
   const previous = snap;
   snap = state;
   const wasConnected = previous && previous.status === "connected";
+  if (!previous || previous.account !== snap.account || previous.email !== snap.email || snap.status !== "connected" || !wasConnected) liveQuotaSample = null;
   if (snap.status === "connected" && !wasConnected) { sessionSamples = []; previousStats = { up: 0, down: 0 }; lastStats = { up: 0, down: 0, upRate: 0, downRate: 0, quotaLimit: 0, quotaLeft: 0 }; sessionActive = true; }
   if (snap.status === "disconnected") { sessionActive = false; sessionSamples = []; lastStats = { up: 0, down: 0, upRate: 0, downRate: 0, quotaLimit: 0, quotaLeft: 0 }; }
   if (introFinished) render();
@@ -1604,7 +1621,8 @@ function handleStats(stats) {
   }
   previousStats = { up: stats.up || 0, down: stats.down || 0 };
   lastStats = stats;
-  if (introFinished) { renderLiveMetrics(); if (currentScreen === "statistics") renderStatistics(); }
+  liveQuotaSample = snap && snap.status === "connected" && Number.isFinite(stats.quotaLimit) && stats.quotaLimit > 0 && Number.isFinite(stats.quotaLeft) && stats.quotaLeft >= 0 ? { limit: Number(stats.quotaLimit), left: Number(stats.quotaLeft) } : null;
+  if (introFinished) { renderHomeQuota(); renderLiveMetrics(); if (currentScreen === "statistics") renderStatistics(); }
 }
 
 async function init() {
