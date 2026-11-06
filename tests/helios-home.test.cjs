@@ -42,7 +42,10 @@ fs.mkdirSync(out, { recursive: true });
     assert.equal(await en.locator('#quota-meter').getAttribute('aria-valuenow'), '100');
     await en.waitForTimeout(3300);
     await en.screenshot({path:path.join(out,'home-disconnected-en.png')});
-    const orb=en.locator('#orb'); await orb.focus(); await en.keyboard.press('Enter');
+    const orb=en.locator('#orb');
+    assert.ok(await orb.locator('.connect-crest').evaluate(el => el.complete && el.naturalWidth > 0), 'custom crest image loaded');
+    assert.equal(await orb.locator('.aegis-lock').count(), 0, 'previous icon is gone');
+    await orb.focus(); await en.keyboard.press('Enter');
     assert.deepEqual(await en.evaluate(()=>window.fixture.calls), [['location','AR',''],['connect']]);
     for (const [status,label,disabled] of [['connecting','Connecting',true],['connected','Connected',false],['disconnecting','Disconnecting',true],['reconnecting','Reconnecting',false]]) {
       await en.evaluate(status=>window.fixture.events.state({...window.fixture.state,status,exitIp:''}),status);
@@ -50,7 +53,7 @@ fs.mkdirSync(out, { recursive: true });
       assert.equal(await en.locator('#status-text').textContent(),label);
       assert.equal(await orb.isDisabled(),disabled);
       if (status==='connecting') {
-        assert.equal(await en.locator('.dial-segments').evaluate(el=>getComputedStyle(el).animationName), 'dial-attention');
+        assert.equal(await en.locator('.orbit-outer').evaluate(el=>getComputedStyle(el).animationName), 'connect-orbit');
         await en.screenshot({path:path.join(out,'home-connecting-en.png')});
       }
       if (status==='connected') {
@@ -88,7 +91,8 @@ fs.mkdirSync(out, { recursive: true });
     await fa.locator('#orb').scrollIntoViewIfNeeded();
     await fa.screenshot({path:path.join(out,'home-connected-fa-mobile.png')});
     const reduced=await setup(320,700,'en','reduce');
-    assert.equal(await reduced.locator('.dial-segments').evaluate(el=>getComputedStyle(el).animationName),'none');
+    assert.equal(await reduced.locator('.orbit-outer').evaluate(el=>getComputedStyle(el).animationName),'none');
+    assert.equal(await reduced.locator('.connect-crest').evaluate(el=>getComputedStyle(el).animationName),'none');
     assert.equal(await reduced.locator('.route-orbit').evaluate(el=>getComputedStyle(el,'::before').animationName),'none');
     assert.equal(await reduced.locator('#quota-ring').evaluate(el=>getComputedStyle(el).transitionDuration),'0s');
     for (const p of [en,fa,reduced]) {

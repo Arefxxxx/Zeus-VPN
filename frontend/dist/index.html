@@ -122,23 +122,16 @@
               <div class="stage-header"><span class="eyebrow" data-i18n="connectionState">CONNECTION STATE</span><span class="stage-mode" id="status-mode">SYSTEM PROXY</span></div>
               <div class="command-wrap">
                 <button class="connection-command" id="orb" data-status="disconnected" type="button" aria-label="Connect" aria-describedby="status-text status-sub">
-                  <span class="command-dial" aria-hidden="true">
-                    <svg class="command-dial-art" viewBox="0 0 220 220" focusable="false">
-                      <circle class="dial-track" cx="110" cy="110" r="101"/>
-                      <circle class="dial-segments" cx="110" cy="110" r="101"/>
-                      <circle class="dial-inner-ring" cx="110" cy="110" r="87"/>
-                      <defs>
-                        <linearGradient id="aegis-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="currentColor"/><stop offset=".48" stop-color="#fff4d7"/><stop offset="1" stop-color="currentColor"/></linearGradient>
-                      </defs>
-                      <path class="aegis-rim" d="M110 49 157 67v37c0 32-19 54-47 69-28-15-47-37-47-69V67Z"/>
-                      <path class="aegis-face" d="M110 56 150 71v33c0 28-16 47-40 60-24-13-40-32-40-60V71Z"/>
-                      <path class="aegis-highlight" d="M77 75 110 62 143 75"/>
-                      <path class="aegis-shackle" d="M95 102v-9a15 15 0 0 1 30 0v9"/>
-                      <path class="aegis-lock" d="M91 101h38a4 4 0 0 1 4 4v27a5 5 0 0 1-5 5H92a5 5 0 0 1-5-5v-27a4 4 0 0 1 4-4Z"/>
-                      <path class="aegis-keyhole" d="M110 109a5 5 0 0 0-3 9l-2 9h10l-2-9a5 5 0 0 0-3-9Z"/>
+                  <span class="connect-art" aria-hidden="true">
+                    <svg class="connect-orbits" viewBox="0 0 240 240" focusable="false">
+                      <circle class="orbit-track" cx="120" cy="120" r="111"/>
+                      <circle class="orbit-outer" cx="120" cy="120" r="111"/>
+                      <circle class="orbit-inner" cx="120" cy="120" r="98"/>
+                      <path class="orbit-ticks" d="M120 4v8 M120 228v8 M4 120h8 M228 120h8"/>
                     </svg>
+                    <span class="connect-core"><img class="connect-crest" src="zeus-winged-connect.png" alt="" draggable="false"></span>
                   </span>
-                  <span class="command-action"><span class="command-action-line" aria-hidden="true"></span><strong class="command-label" id="command-label" data-i18n="connect">Connect</strong><span class="command-action-line" aria-hidden="true"></span></span>
+                  <span class="connect-action"><strong id="command-label" data-i18n="connect">Connect</strong><span class="connect-action-arrow" aria-hidden="true">↗</span></span>
                 </button>
               </div>
               <div class="connection-copy" role="status" aria-live="polite" aria-atomic="true"><span class="connection-indicator" aria-hidden="true"></span><div><h2 id="status-text" data-i18n="stateDisconnected">Disconnected</h2><p id="status-sub" data-i18n="tapToConnect">Choose a location, then establish protection.</p><span class="session-clock" id="session-clock"></span></div></div>
