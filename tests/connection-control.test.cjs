@@ -60,7 +60,8 @@ fs.mkdirSync(out, { recursive: true });
     assert.equal(await page.locator('#status-sub').textContent(), 'Synthetic connection failure');
     await page.screenshot({path: path.join(out, 'error-desktop.png')});
     assert.equal(await button.locator('.command-dial').count(), 1);
-    assert.equal(await button.locator('.dial-power').count(), 1);
+    assert.equal(await button.locator('.aegis-lock').count(), 1);
+    assert.equal(await button.locator('.dial-power').count(), 0, 'the ordinary power icon is replaced');
     assert.equal(await button.locator('.guardian-crest').count(), 0, 'the previous temple icon is replaced');
     assert.equal(await button.locator('.dial-segments').evaluate(el => getComputedStyle(el).animationName), 'none'); // error is restrained
     const fa = await setup(390, 844, 'fa');
