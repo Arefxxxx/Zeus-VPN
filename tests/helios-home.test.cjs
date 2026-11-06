@@ -50,7 +50,7 @@ fs.mkdirSync(out, { recursive: true });
       assert.equal(await en.locator('#status-text').textContent(),label);
       assert.equal(await orb.isDisabled(),disabled);
       if (status==='connecting') {
-        assert.equal(await en.locator('.guardian-frame').evaluate(el=>getComputedStyle(el).animationName), 'guardian-attention');
+        assert.equal(await en.locator('.dial-segments').evaluate(el=>getComputedStyle(el).animationName), 'dial-attention');
         await en.screenshot({path:path.join(out,'home-connecting-en.png')});
       }
       if (status==='connected') {
@@ -88,7 +88,7 @@ fs.mkdirSync(out, { recursive: true });
     await fa.locator('#orb').scrollIntoViewIfNeeded();
     await fa.screenshot({path:path.join(out,'home-connected-fa-mobile.png')});
     const reduced=await setup(320,700,'en','reduce');
-    assert.equal(await reduced.locator('.guardian-frame').evaluate(el=>getComputedStyle(el).animationName),'none');
+    assert.equal(await reduced.locator('.dial-segments').evaluate(el=>getComputedStyle(el).animationName),'none');
     assert.equal(await reduced.locator('.route-orbit').evaluate(el=>getComputedStyle(el,'::before').animationName),'none');
     assert.equal(await reduced.locator('#quota-ring').evaluate(el=>getComputedStyle(el).transitionDuration),'0s');
     for (const p of [en,fa,reduced]) {

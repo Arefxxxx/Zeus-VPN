@@ -958,39 +958,49 @@ body.connected .backdrop-olympus {
   opacity: .28;
   filter: saturate(1.02) contrast(1.1) brightness(1.04);
 }
-/* The connection stage is a custom, architectural guardian rather than a power icon. */
+/* A tactile connection dial: dark enamel, machined gold and a security/power mark. */
 .connection-stage {
-  background: linear-gradient(150deg, rgba(40, 33, 58, .94), rgba(12, 20, 34, .98) 60%);
-  border-color: rgba(203, 175, 119, .28);
+  background: radial-gradient(ellipse at 50% 48%, rgba(43, 46, 65, .52), transparent 57%), linear-gradient(145deg, rgba(22, 28, 45, .97), rgba(8, 16, 29, .98));
+  border-color: rgba(203, 175, 119, .24);
 }
 .stage-header { padding-bottom: 13px; border-bottom: 1px solid rgba(212, 189, 144, .15); }
 .stage-mode { padding: 6px 9px; border: 1px solid rgba(203, 175, 119, .22); color: #cfbd99; background: rgba(10, 15, 27, .38); }
-.command-wrap { padding: 16px 0 10px; }
-.connection-command { --crest-edge: #d8bf87; position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px; width: min(245px, 100%); padding: 8px 8px 0; border: 0; background: transparent; color: var(--crest-edge); }
-.connection-command:focus-visible { outline: 2px solid #f1dcaa; outline-offset: 6px; border-radius: 6px; }
+.command-wrap { padding: 13px 0 8px; }
+.connection-command {
+  --dial-accent: #e4ca91; --dial-glow: 208, 174, 105; --dial-face: 28, 38, 54;
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: 14px;
+  width: min(240px, 100%); padding: 6px; border: 0; background: transparent; color: var(--dial-accent);
+}
+.connection-command:focus-visible { outline: 2px solid #f1dcaa; outline-offset: 5px; border-radius: 12px; }
 .connection-command:disabled { cursor: wait; }
-.connection-command:disabled .command-action { opacity: .72; }
-.guardian-crest { display: block; width: min(174px, 100%); height: auto; overflow: visible; transition: transform .22s ease, filter .35s ease; }
-.connection-command:hover:not(:disabled) .guardian-crest { transform: translateY(-3px); }
-.guardian-shadow { fill: url(#guardian-stone); stroke: none; }
-.guardian-frame { fill: none; stroke: url(#guardian-metal); stroke-width: 2; }
-.guardian-inner { fill: rgba(8, 15, 26, .46); stroke: currentColor; stroke-width: .7; }
-.guardian-pediment { fill: none; stroke: url(#guardian-metal); stroke-width: 3; stroke-linejoin: miter; }
-.guardian-columns { fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: square; }
-.guardian-detail { fill: none; stroke: currentColor; stroke-width: 1.5; }
-.command-action { width: 100%; min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 10px 18px; background: linear-gradient(120deg, #c4a36b, #e0c894); color: #101827; border: 1px solid #e1c995; }
-.command-label { font-size: 13px; line-height: 1.2; font-weight: 750; letter-spacing: .06em; }
-.command-arrow { font-size: 18px; line-height: 1; }
-html[dir="rtl"] .command-arrow { transform: scaleX(-1); }
-.connection-command[data-status="connecting"], .connection-command[data-status="reconnecting"] { --crest-edge: #f2d99b; }
-.connection-command[data-status="connecting"] .guardian-frame, .connection-command[data-status="reconnecting"] .guardian-frame { animation: guardian-attention 2.6s ease-in-out infinite; }
-.connection-command[data-status="connected"] { --crest-edge: #b3dfc3; }
-.connection-command[data-status="connected"] .guardian-inner { fill: rgba(24, 62, 48, .65); }
-.connection-command[data-status="connected"] .command-action { background: linear-gradient(120deg, #34594b, #567c69); color: #f0f6e8; border-color: #83a992; }
-.connection-command[data-status="disconnecting"] .guardian-crest { opacity: .65; }
-.connection-command[data-status="error"] { --crest-edge: #e0a19a; }
-.connection-command[data-status="error"] .guardian-inner { fill: rgba(76, 37, 43, .55); }
-@keyframes guardian-attention { 0%, 100% { opacity: .65; } 50% { opacity: 1; } }
+.command-dial {
+  position: relative; display: grid; place-items: center; width: min(190px, 100%); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle at 43% 29%, rgba(69, 77, 91, .86), rgba(var(--dial-face), .99) 39%, #0a1423 72%);
+  box-shadow: 0 0 0 1px rgba(236, 214, 169, .32), 0 0 0 8px rgba(205, 176, 120, .035), 0 18px 34px rgba(0, 0, 0, .52), inset 0 2px 5px rgba(255, 240, 201, .14), inset 0 -8px 20px rgba(0, 0, 0, .46);
+  transition: transform .22s ease, box-shadow .3s ease, background .3s ease;
+}
+.command-dial::before { content: ""; position: absolute; inset: 17%; border-radius: 50%; background: radial-gradient(circle at 50% 30%, rgba(64, 73, 86, .58), rgba(8, 16, 29, .94) 78%); box-shadow: inset 0 1px 1px rgba(255, 241, 205, .13), inset 0 -3px 12px rgba(0, 0, 0, .45), 0 0 0 1px rgba(217, 195, 145, .13); }
+.command-dial-art { position: relative; display: block; width: 100%; height: 100%; overflow: visible; }
+.dial-track { fill: none; stroke: rgba(227, 206, 161, .12); stroke-width: 1; }
+.dial-segments { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 86 73 31 73 86 286; transform: rotate(-90deg); transform-origin: center; opacity: .75; }
+.dial-inner-ring { fill: none; stroke: rgba(230, 207, 162, .18); stroke-width: .7; }
+.dial-shield { fill: none; stroke: currentColor; stroke-width: 1.4; opacity: .56; stroke-linejoin: round; }
+.dial-power { fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; filter: drop-shadow(0 0 6px rgba(var(--dial-glow), .34)); }
+.connection-command:hover:not(:disabled) .command-dial { transform: translateY(-3px); box-shadow: 0 0 0 1px rgba(236, 214, 169, .5), 0 0 0 8px rgba(205, 176, 120, .05), 0 18px 34px rgba(0, 0, 0, .52), 0 0 28px rgba(var(--dial-glow), .17), inset 0 2px 5px rgba(255, 240, 201, .14), inset 0 -8px 20px rgba(0, 0, 0, .46); }
+.connection-command:active:not(:disabled) .command-dial { transform: translateY(1px) scale(.98); }
+.command-action { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 28px; width: 100%; color: #eadbb9; }
+.command-action-line { width: 24px; height: 1px; background: linear-gradient(90deg, transparent, currentColor); opacity: .52; }
+.command-action-line:last-child { transform: scaleX(-1); }
+.command-label { font-size: 12px; line-height: 1.3; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+html[dir="rtl"] .command-label { letter-spacing: 0; font-size: 14px; }
+.connection-command[data-status="connecting"], .connection-command[data-status="reconnecting"] { --dial-accent: #f2dcaa; }
+.connection-command[data-status="connecting"] .dial-segments, .connection-command[data-status="reconnecting"] .dial-segments { animation: dial-attention 2.6s ease-in-out infinite; }
+.connection-command[data-status="connected"] { --dial-accent: #b2e1c2; --dial-glow: 118, 196, 151; --dial-face: 24, 53, 46; }
+.connection-command[data-status="connected"] .command-dial { box-shadow: 0 0 0 1px rgba(163, 214, 180, .5), 0 0 0 8px rgba(111, 179, 135, .05), 0 18px 34px rgba(0, 0, 0, .52), 0 0 28px rgba(var(--dial-glow), .15), inset 0 2px 5px rgba(255, 255, 255, .1), inset 0 -8px 20px rgba(0, 0, 0, .46); }
+.connection-command[data-status="connected"] .command-action { color: #c1dec9; }
+.connection-command[data-status="disconnecting"] .command-dial { opacity: .7; }
+.connection-command[data-status="error"] { --dial-accent: #e5a7a1; --dial-glow: 204, 118, 110; }
+@keyframes dial-attention { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
 .connection-copy { display: flex; align-items: flex-start; justify-content: center; gap: 10px; text-align: start; }
 .connection-indicator { flex: none; width: 3px; height: 34px; margin-top: 3px; background: #bda36e; }
 body[data-connection-status="connected"] .connection-indicator { background: #9cc9ac; }
@@ -1035,8 +1045,8 @@ body[data-connection-status="connected"] .connection-copy h2 { color: #e1d09d; }
   .screen-home .connection-stage { min-height: 360px; }
   .screen-home .command-wrap { min-height: 245px; }
 }
-@media (max-width: 380px) { .guardian-crest { width: 154px; }.command-wrap { min-height: 220px; } }
-@media (prefers-reduced-motion: reduce) { .connection-command .guardian-frame, .route-orbit::before { animation: none !important; }.guardian-crest, .quota-progress { transition: none !important; } }
+@media (max-width: 380px) { .command-dial { width: 170px; }.command-wrap { min-height: 220px; } }
+@media (prefers-reduced-motion: reduce) { .connection-command .dial-segments, .route-orbit::before { animation: none !important; }.command-dial, .quota-progress { transition: none !important; } }
 @media (max-width: 380px) {
   .workspace-header { gap: 8px; }
   .workspace-actions, .account-chip { min-width: 0; }

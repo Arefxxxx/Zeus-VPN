@@ -42,7 +42,7 @@ fs.mkdirSync(out, { recursive: true });
       assert.equal(await button.getAttribute('data-status'), status);
       assert.equal(await page.locator('#status-text').textContent(), label);
       assert.equal(await button.isDisabled(), disabled);
-      assert.equal(await button.locator('.guardian-frame').evaluate(el => getComputedStyle(el).animationName), (status === 'connecting' || status === 'reconnecting') ? 'guardian-attention' : 'none');
+      assert.equal(await button.locator('.dial-segments').evaluate(el => getComputedStyle(el).animationName), (status === 'connecting' || status === 'reconnecting') ? 'dial-attention' : 'none');
       if (status === 'reconnecting') {
         await button.click();
         assert.deepEqual(await page.evaluate(() => window.fixture.calls), ['connect', 'disconnect', 'disconnect']);
@@ -59,8 +59,10 @@ fs.mkdirSync(out, { recursive: true });
     assert.equal(await page.locator('#status-text').textContent(), 'Error');
     assert.equal(await page.locator('#status-sub').textContent(), 'Synthetic connection failure');
     await page.screenshot({path: path.join(out, 'error-desktop.png')});
-    assert.equal(await button.locator('.guardian-crest').count(), 1);
-    assert.equal(await button.locator('.guardian-frame').evaluate(el => getComputedStyle(el).animationName), 'none'); // error is restrained
+    assert.equal(await button.locator('.command-dial').count(), 1);
+    assert.equal(await button.locator('.dial-power').count(), 1);
+    assert.equal(await button.locator('.guardian-crest').count(), 0, 'the previous temple icon is replaced');
+    assert.equal(await button.locator('.dial-segments').evaluate(el => getComputedStyle(el).animationName), 'none'); // error is restrained
     const fa = await setup(390, 844, 'fa');
     await fa.screenshot({path: path.join(out, 'disconnected-mobile-fa.png')});
     assert.equal(await fa.evaluate(() => document.documentElement.dir), 'rtl');
@@ -72,6 +74,6 @@ fs.mkdirSync(out, { recursive: true });
       assert.ok(rect.x >= 0 && rect.x + rect.width <= p.viewportSize().width + 1, 'control fits viewport');
     }
     assert.deepEqual(errors, []);
-    console.log('PASS fixture states, bridge actions, guardian control, RTL, desktop and mobile screenshots');
+    console.log('PASS fixture states, bridge actions, premium dial control, RTL, desktop and mobile screenshots');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

@@ -122,19 +122,16 @@
               <div class="stage-header"><span class="eyebrow" data-i18n="connectionState">CONNECTION STATE</span><span class="stage-mode" id="status-mode">SYSTEM PROXY</span></div>
               <div class="command-wrap">
                 <button class="connection-command" id="orb" data-status="disconnected" type="button" aria-label="Connect" aria-describedby="status-text status-sub">
-                  <svg class="guardian-crest" viewBox="0 0 200 210" aria-hidden="true" focusable="false">
-                    <defs>
-                      <linearGradient id="guardian-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe9b4"/><stop offset=".45" stop-color="#ae8550"/><stop offset="1" stop-color="#e5cc8c"/></linearGradient>
-                      <linearGradient id="guardian-stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#37334b"/><stop offset="1" stop-color="#101a29"/></linearGradient>
-                    </defs>
-                    <path class="guardian-shadow" d="M100 13 171 44 165 133 100 196 35 133 29 44Z"/>
-                    <path class="guardian-frame" d="M100 13 171 44 165 133 100 196 35 133 29 44Z"/>
-                    <path class="guardian-inner" d="M100 29 156 53 151 125 100 176 49 125 44 53Z"/>
-                    <path class="guardian-pediment" d="M61 77 100 55 139 77H61Z M65 82H135 M68 136H132 M61 144H139"/>
-                    <path class="guardian-columns" d="M72 88v42 M85 88v42 M100 88v42 M115 88v42 M128 88v42"/>
-                    <path class="guardian-detail" d="M100 34v10 M54 59l6 3 M146 59l-6 3 M100 165v8"/>
-                  </svg>
-                  <span class="command-action"><strong class="command-label" id="command-label" data-i18n="connect">Connect</strong><span class="command-arrow" aria-hidden="true">→</span></span>
+                  <span class="command-dial" aria-hidden="true">
+                    <svg class="command-dial-art" viewBox="0 0 220 220" focusable="false">
+                      <circle class="dial-track" cx="110" cy="110" r="101"/>
+                      <circle class="dial-segments" cx="110" cy="110" r="101"/>
+                      <circle class="dial-inner-ring" cx="110" cy="110" r="87"/>
+                      <path class="dial-shield" d="M110 57 150 72v32c0 29-17 47-40 59-23-12-40-30-40-59V72Z"/>
+                      <path class="dial-power" d="M110 78v32 M94 91a25 25 0 1 0 32 0"/>
+                    </svg>
+                  </span>
+                  <span class="command-action"><span class="command-action-line" aria-hidden="true"></span><strong class="command-label" id="command-label" data-i18n="connect">Connect</strong><span class="command-action-line" aria-hidden="true"></span></span>
                 </button>
               </div>
               <div class="connection-copy" role="status" aria-live="polite" aria-atomic="true"><span class="connection-indicator" aria-hidden="true"></span><div><h2 id="status-text" data-i18n="stateDisconnected">Disconnected</h2><p id="status-sub" data-i18n="tapToConnect">Choose a location, then establish protection.</p><span class="session-clock" id="session-clock"></span></div></div>
