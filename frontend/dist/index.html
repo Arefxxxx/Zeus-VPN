@@ -35,7 +35,7 @@
     <div class="intro-architecture intro-architecture-left"></div>
     <div class="intro-architecture intro-architecture-right"></div>
     <div class="intro-content">
-      <div class="intro-emblem proposed-mark"><img src="zeus-royal-mark.png" alt="ZEUS royal mark"></div>
+      <div class="intro-emblem proposed-mark"><img src="zeus-royal-mark-324.png" alt="ZEUS royal mark"></div>
       <div class="intro-rule"><span></span><i></i><span></span></div>
       <p class="intro-kicker" data-i18n="introKicker">THE ART OF DIGITAL PROTECTION</p>
       <h1>ZEUS <span>VPN</span></h1>
@@ -52,7 +52,7 @@
   <!-- Login remains a real application state, not a decorative intro state. -->
   <main id="login-view" class="login-view" hidden>
     <div class="login-shell">
-      <div class="login-monogram proposed-mark"><img src="zeus-royal-mark.png" alt="ZEUS royal mark"></div>
+      <div class="login-monogram proposed-mark"><img src="zeus-royal-mark-324.png" alt="ZEUS royal mark"></div>
       <p class="eyebrow" data-i18n="accountAccess">ACCOUNT ACCESS</p>
       <h1 data-i18n="welcomeToZeus">Welcome to ZEUS</h1>
       <p class="login-lead muted" id="login-subtitle" data-i18n="signInMozilla">Sign in with your Mozilla account</p>
@@ -79,7 +79,7 @@
   <div id="app-shell" class="app-shell" hidden>
     <aside class="sidebar" data-i18n-aria="primaryNavigation" aria-label="Primary navigation">
       <div class="sidebar-brand">
-        <img class="royal-brand-mark" src="zeus-royal-mark.png" alt="ZEUS royal mark">
+        <img class="royal-brand-mark" src="zeus-royal-mark-324.png" alt="ZEUS royal mark">
         <div><b>ZEUS</b><span>VPN</span></div>
       </div>
       <div class="sidebar-caption" data-i18n="navigation">NAVIGATION</div>
@@ -99,7 +99,7 @@
 
     <div class="workspace-shell">
       <header class="workspace-header">
-        <div class="mobile-brand"><img class="royal-brand-mark" src="zeus-royal-mark.png" alt="ZEUS royal mark"><b>ZEUS</b><span>VPN</span></div>
+        <div class="mobile-brand"><img class="royal-brand-mark" src="zeus-royal-mark-324.png" alt="ZEUS royal mark"><b>ZEUS</b><span>VPN</span></div>
         <div class="workspace-breadcrumb"><span class="breadcrumb-kicker">ZEUS VPN</span><span class="breadcrumb-divider">/</span><strong id="breadcrumb-title">Command Center</strong></div>
         <div class="workspace-actions">
           <button class="account-chip" id="btn-account" type="button" title="Account">
@@ -162,6 +162,16 @@
                 <div class="metric"><span class="metric-icon download"><svg viewBox="0 0 24 24"><path d="M12 4v14M6 12l6 6 6-6"/></svg></span><div><span class="metric-label" data-i18n="download">Download</span><strong id="rate-down">0 B/s</strong><small id="total-down">Current session · 0 B</small></div></div>
                 <div class="metric"><span class="metric-icon upload"><svg viewBox="0 0 24 24"><path d="M12 20V6M6 12l6-6 6 6"/></svg></span><div><span class="metric-label" data-i18n="upload">Upload</span><strong id="rate-up">0 B/s</strong><small id="total-up">Current session · 0 B</small></div></div>
                 <div class="metric metric-total"><span class="metric-label" data-i18n="sessionTotal">Session total</span><strong id="home-session-total">0 B</strong><small data-i18n="liveOneSecond">Live · one-second samples</small></div>
+              </div>
+              <div class="home-chart" aria-labelledby="home-chart-caption">
+                <p class="home-chart-caption" id="home-chart-caption" data-i18n="combinedRate">Combined upload and download rate</p>
+                <div class="home-chart-plot chart-wrap">
+                  <svg id="home-live-chart" viewBox="0 0 720 220" preserveAspectRatio="none" role="img" data-i18n-aria="liveChart" aria-label="Live session traffic chart">
+                    <path class="chart-grid-line" d="M0 40H720M0 90H720M0 140H720M0 190H720"/>
+                    <path id="home-chart-area" class="chart-area" hidden></path><path id="home-chart-line" class="chart-line" hidden></path>
+                  </svg>
+                  <div class="chart-empty" id="home-chart-empty"><span class="empty-mark">◆</span><span data-i18n="chartAwaiting">Live samples will appear when the tunnel is active.</span></div>
+                </div>
               </div>
             </section>
           </div>
@@ -502,8 +512,8 @@
   </section>
 
   <!-- Dialogs preserve the native/API operations used by the existing app. -->
-  <div class="modal" id="modal-confirm" hidden><div class="modal-card"><div class="modal-mark">◆</div><p class="eyebrow" data-i18n="confirmation">CONFIRMATION</p><h3 id="confirm-title">Are you sure?</h3><p class="muted" id="confirm-message"></p><div class="btn-row"><button class="btn primary" id="btn-confirm-yes" data-i18n="confirm">Confirm</button><button class="btn secondary" id="btn-confirm-no" data-i18n="cancel">Cancel</button></div></div></div>
-  <div class="modal" id="modal-admin" hidden><div class="modal-card"><div class="modal-mark gold">◆</div><p class="eyebrow" data-i18n="elevatedAccess">ELEVATED ACCESS</p><h3 data-i18n="administratorNeeded">Administrator needed</h3><p class="muted" id="admin-reason"></p><button class="btn primary" id="btn-elevate" data-i18n="restartAsAdmin">Restart as administrator</button><button class="btn secondary" id="btn-use-proxy" data-i18n="useSystemProxy">Use System Proxy instead</button></div></div>
+  <div class="modal" id="modal-confirm" hidden role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-message" tabindex="-1"><div class="modal-card"><div class="modal-mark">◆</div><p class="eyebrow" data-i18n="confirmation">CONFIRMATION</p><h3 id="confirm-title">Are you sure?</h3><p class="muted" id="confirm-message"></p><div class="btn-row"><button class="btn primary" id="btn-confirm-yes" data-i18n="confirm">Confirm</button><button class="btn secondary" id="btn-confirm-no" data-i18n="cancel">Cancel</button></div></div></div>
+  <div class="modal" id="modal-admin" hidden role="dialog" aria-modal="true" aria-labelledby="admin-title" aria-describedby="admin-reason" tabindex="-1"><div class="modal-card"><div class="modal-mark gold">◆</div><p class="eyebrow" data-i18n="elevatedAccess">ELEVATED ACCESS</p><h3 id="admin-title" data-i18n="administratorNeeded">Administrator needed</h3><p class="muted" id="admin-reason"></p><button class="btn primary" id="btn-elevate" data-i18n="restartAsAdmin">Restart as administrator</button><button class="btn secondary" id="btn-use-proxy" data-i18n="useSystemProxy">Use System Proxy instead</button></div></div>
   <div class="toast" id="toast" hidden></div>
 
   <script src="bridge.js"></script>
