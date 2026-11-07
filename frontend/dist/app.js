@@ -11,9 +11,9 @@ const translations = {
     accountAccess: "ACCOUNT ACCESS", welcomeToZeus: "Welcome to ZEUS", signInMozilla: "Sign in with your Mozilla account", email: "Email", password: "Password", signIn: "Sign in", signInWithFirefox: "Sign in with Firefox", cancel: "Cancel", loginHint: "The Mozilla sign-in page opens inside this window.", freeMozilla: "Free with any Mozilla account · 50 GB per month", createAccount: "Create a free account",
     navigation: "NAVIGATION", primaryNavigation: "Primary navigation", mobileNavigation: "Mobile navigation", liveChart: "Live session traffic chart", commandCenter: "Command Center", locations: "Locations", statistics: "Statistics", activity: "Activity", settings: "Settings", home: "Home", protectedByMozilla: "Protected by Mozilla",
     commandCenterEyebrow: "COMMAND CENTER", commandCenterTitle: "Your protection, at a glance.", commandCenterLead: "A clear view of the connection that protects your digital life.", connectionState: "CONNECTION STATE", connect: "Connect", disconnect: "Disconnect", stateDisconnected: "Disconnected", stateConnecting: "Connecting", stateConnected: "Connected", stateDisconnecting: "Disconnecting", stateReconnecting: "Reconnecting", tapToConnect: "Choose a location, then establish protection.", securingConnection: "Securing your connection", protectedNow: "Your traffic is protected", disconnecting: "Closing the secure route", reconnecting: "Connection lost, retrying", actualStateOnly: "Actual network state only",
-    protectedRoute: "PROTECTED ROUTE", selectedLocation: "Selected location", change: "Change", connectionMode: "Connection mode", systemProxy: "System Proxy", fullVpn: "Full VPN", exitIp: "Exit IP", accountQuota: "ACCOUNT QUOTA", monthlyData: "Monthly data", remaining: "Remaining", allAccounts: "All accounts", liveTraffic: "LIVE TRAFFIC", currentSession: "Current session", openObservatory: "Open observatory", download: "Download", upload: "Upload", sessionTotal: "Session total", liveOneSecond: "Live · one-second samples", protectionMode: "PROTECTION MODE", chooseTrafficRoute: "Choose how traffic leaves this device.",
+    protectedRoute: "PROTECTED ROUTE", selectedLocation: "Selected location", change: "Change", connectionMode: "Connection mode", systemProxy: "System Proxy", fullVpn: "Full VPN", exitIp: "Exit IP", accountQuota: "ACCOUNT QUOTA", monthlyData: "Monthly data", remaining: "Remaining", used: "Used", allAccounts: "All accounts", liveTraffic: "LIVE TRAFFIC", currentSession: "Current session", openObservatory: "Open observatory", download: "Download", upload: "Upload", sessionTotal: "Session total", liveOneSecond: "Live · one-second samples", protectionMode: "PROTECTION MODE", chooseTrafficRoute: "Choose how traffic leaves this device.",
     locationsEyebrow: "NETWORK ATLAS", locationsTitle: "Choose your location.", locationsLead: "Select a real server route. Latency is measured only when requested.", measureLatency: "Measure latency", searchLocations: "Search countries or cities", serverDataActual: "Server data from the application", loadingServers: "Loading servers…", couldNotLoadServers: "Could not load servers.", noMatches: "No matches", fastestAvailable: "Fastest available server", cities: "cities", city: "city", timeout: "timeout",
-    statisticsEyebrow: "NETWORK OBSERVATORY", statisticsTitle: "See what ZEUS is carrying.", statisticsLead: "Live, current-session measurements from the existing tunnel.", networkAnalytics: "NETWORK ANALYTICS", analyticsTitle: "A single view of your network activity.", analyticsLead: "Recorded destinations and live tunnel measurements, kept separate and factual.", overview: "OVERVIEW", totalUploaded: "Total uploaded", totalDownloaded: "Total downloaded", totalTraffic: "Total traffic", destinationIPs: "Destination IPs", destinationCountries: "Destination countries", activeSession: "Active session", recordedUsage: "Recorded usage", detectedRecords: "Detected in recorded hosts", countryMetadataUnavailable: "Metadata unavailable", countryMetadataDetail: "The usage API records destinations, but does not provide reliable country enrichment.", trafficDistribution: "TRAFFIC DISTRIBUTION", uploadDownloadMix: "Upload versus download", destinationDistribution: "DESTINATION DISTRIBUTION", relativeDestinationShare: "Relative traffic share by destination", topDestinations: "Top recorded destinations", countryDistribution: "COUNTRY DISTRIBUTION", dataBoundary: "Data boundary", ipObservatory: "IP ADDRESS OBSERVATORY", destinationRecords: "Recorded destination records", hostRecordsOnly: "Hosts and IPs from the usage ledger", searchIpHostname: "Search IP or hostname", sortBy: "Sort by", sortTraffic: "Traffic volume", sortDestination: "Destination", sortIp: "IP address", sortCountryUnavailable: "Country (not available)", destination: "Destination", ipAddress: "IP address", country: "Country", traffic: "Traffic", breakdown: "Breakdown", relativeShare: "share", ipTag: "IP", hostTag: "HOST", liveSession: "LIVE SESSION", sessionTraffic: "SESSION TRAFFIC", notConnected: "No active session", oneSecondSamples: "1s samples", combinedTraffic: "Combined traffic", chartAwaiting: "Live samples will appear when the tunnel is active.", downloadRate: "Download rate", uploadRate: "Upload rate", sessionDuration: "Session duration", quotaRemaining: "Quota remaining", historyBoundary: "HISTORY BOUNDARY", historyUnavailable: "Historical time series unavailable", historyUnavailableDetail: "This version exposes live session samples and recorded destinations, not daily, weekly or monthly buckets.", recordedDestinations: "RECORDED DESTINATIONS", whereTrafficWent: "Where recorded traffic went.", retainedUsage: "Retained usage data", destinationNote: "Cumulative destination totals with last activity, not a time-series history.", windowsApplications: "WINDOWS APPLICATIONS", applicationTraffic: "Application traffic", windowsOnly: "Windows only",
+    statisticsEyebrow: "NETWORK OBSERVATORY", statisticsTitle: "See what ZEUS is carrying.", statisticsLead: "Live, current-session measurements from the existing tunnel.", networkAnalytics: "NETWORK ANALYTICS", analyticsTitle: "A single view of your network activity.", analyticsLead: "Recorded destinations and live tunnel measurements, kept separate and factual.", overview: "OVERVIEW", totalUploaded: "Total uploaded", totalDownloaded: "Total downloaded", totalTraffic: "Total traffic", destinationIPs: "Destination IPs", destinationCountries: "Destination countries", activeSession: "Active session", recordedUsage: "Recorded usage", detectedRecords: "Detected in recorded hosts", countryMetadataUnavailable: "Metadata unavailable", countryMetadataDetail: "The usage API records destinations, but does not provide reliable country enrichment.", trafficDistribution: "TRAFFIC DISTRIBUTION", uploadDownloadMix: "Upload versus download", destinationDistribution: "DESTINATION DISTRIBUTION", relativeDestinationShare: "Relative traffic share by destination", topDestinations: "Top recorded destinations", countryDistribution: "COUNTRY DISTRIBUTION", dataBoundary: "Data boundary", ipObservatory: "IP ADDRESS OBSERVATORY", destinationRecords: "Recorded destination records", hostRecordsOnly: "Hosts and IPs from the usage ledger", searchIpHostname: "Search IP or hostname", sortBy: "Sort by", sortTraffic: "Traffic volume", sortDestination: "Destination", sortIp: "IP address", sortCountryUnavailable: "Country (not available)", destination: "Destination", ipAddress: "IP address", country: "Country", traffic: "Traffic", breakdown: "Breakdown", relativeShare: "share", ipTag: "IP", hostTag: "HOST", liveSession: "LIVE SESSION", sessionTraffic: "SESSION TRAFFIC", notConnected: "No active session", oneSecondSamples: "1s samples", combinedTraffic: "Combined traffic", combinedRate: "Combined upload and download rate", chartAwaiting: "Live samples will appear when the tunnel is active.", downloadRate: "Download rate", uploadRate: "Upload rate", sessionDuration: "Session duration", quotaRemaining: "Quota remaining", historyBoundary: "HISTORY BOUNDARY", historyUnavailable: "Historical time series unavailable", historyUnavailableDetail: "This version exposes live session samples and recorded destinations, not daily, weekly or monthly buckets.", recordedDestinations: "RECORDED DESTINATIONS", whereTrafficWent: "Where recorded traffic went.", retainedUsage: "Retained usage data", destinationNote: "Cumulative destination totals with last activity, not a time-series history.", windowsApplications: "WINDOWS APPLICATIONS", applicationTraffic: "Application traffic", windowsOnly: "Windows only",
     activityEyebrow: "ACTIVITY LEDGER", activityTitle: "A factual record of the application.", activityLead: "Logs and notices from the application — without invented history.", copyLogs: "Copy logs", applicationLogs: "APPLICATION LOGS", diagnosticRecord: "Diagnostic record", openLogFile: "Open log file", logsEmpty: "Open logs to load the current diagnostic record.", destinationUsage: "Destination usage", searchDestinations: "Search destinations", total: "Total", clearHistory: "Clear history", usageUnavailable: "Usage data unavailable", usageUnavailableDetail: "The application could not read retained destination usage.", retryUsage: "Retry usage", logsUnavailable: "Logs unavailable", logsUnavailableDetail: "The application could not read its diagnostic record.", retryLogs: "Retry logs",
     settingsEyebrow: "CONTROL ROOM", settingsTitle: "Shape the way ZEUS protects you.", settingsLead: "Connection, routing, startup and appearance preferences.", accounts: "ACCOUNTS", accountsTitle: "Mozilla accounts", addAccount: "Add another account", connection: "CONNECTION", connectionSettings: "Connection behavior", autoConnect: "Connect on launch", autoConnectDetail: "Reconnect automatically when ZEUS starts.", autoSwitch: "Auto-switch accounts", autoSwitchDetail: "Use the next account when one runs out of data.", startAtLogin: "Start at login", startWithWindows: "Start with Windows", openAtLogin: "Open at login", autostartDetail: "Launch ZEUS automatically when you sign in.", killSwitch: "Kill switch", killSwitchDetail: "Block traffic if the VPN drops until it reconnects or you disconnect.", routing: "ROUTING", routingSettings: "Traffic boundaries", bypassIran: "Bypass Iranian sites", bypassIranDetail: ".ir domains connect directly.", bypassLan: "Bypass local network", bypassLanDetail: "Printers, routers and LAN stay direct.", bypassLanUnsupported: "Android 13 or newer is required for route-level LAN bypass.", fullVpnApps: "FULL VPN APPS", allApps: "All apps", selectedOnly: "Selected only", exceptSelected: "Except selected", chooseApps: "Choose apps", searchApps: "Search apps", antiFiltering: "ANTI-FILTERING", antiFilteringSettings: "Transport detail", tlsFragmentation: "TLS fragmentation", tlsFragmentationDetail: "Hides server names from SNI filtering.", tlsAuto: "Auto", tlsAlways: "Always (SNI)", tlsFirstByte: "First byte", tlsOff: "Off", localProxyPort: "Local proxy port", localProxyPortDetail: "HTTP + SOCKS5 for other apps.", appearance: "APPEARANCE", appearanceTitle: "A quieter command center.", language: "Language", languageDetail: "Choose the interface direction.", english: "English", persian: "فارسی", visualEffects: "Atmospheric effects", visualEffectsDetail: "Reduce movement and decorative lighting.", troubleshooting: "TROUBLESHOOTING", diagnosticsTitle: "Diagnostics", viewLogs: "View logs", openStatistics: "Open statistics",
     confirmation: "CONFIRMATION", confirm: "Confirm", elevatedAccess: "ELEVATED ACCESS", administratorNeeded: "Administrator needed", restartAsAdmin: "Restart as administrator", useSystemProxy: "Use System Proxy instead",
@@ -26,9 +26,9 @@ const translations = {
     accountAccess: "دسترسی حساب", welcomeToZeus: "به زئوس خوش آمدید", signInMozilla: "با حساب موزیلا وارد شوید", email: "ایمیل", password: "رمز عبور", signIn: "ورود", signInWithFirefox: "ورود با فایرفاکس", cancel: "لغو", loginHint: "صفحه ورود موزیلا داخل همین پنجره باز می‌شود.", freeMozilla: "رایگان با هر حساب موزیلا · ۵۰ گیگابایت در ماه", createAccount: "ساخت حساب رایگان",
     navigation: "ناوبری", primaryNavigation: "ناوبری اصلی", mobileNavigation: "ناوبری موبایل", liveChart: "نمودار ترافیک نشست زنده", commandCenter: "مرکز فرماندهی", locations: "موقعیت‌ها", statistics: "آمار", activity: "فعالیت", settings: "تنظیمات", home: "خانه", protectedByMozilla: "حفاظت‌شده توسط موزیلا",
     commandCenterEyebrow: "مرکز فرماندهی", commandCenterTitle: "حفاظت شما، در یک نگاه.", commandCenterLead: "نمایی روشن از ارتباطی که از زندگی دیجیتال شما محافظت می‌کند.", connectionState: "وضعیت اتصال", connect: "اتصال", disconnect: "قطع اتصال", stateDisconnected: "متصل نیست", stateConnecting: "در حال اتصال", stateConnected: "متصل", stateDisconnecting: "در حال قطع اتصال", stateReconnecting: "در حال اتصال دوباره", tapToConnect: "موقعیت را انتخاب کنید و حفاظت را فعال کنید.", securingConnection: "در حال ایمن‌سازی اتصال", protectedNow: "ترافیک شما محافظت می‌شود", disconnecting: "در حال بستن مسیر امن", reconnecting: "اتصال از دست رفت؛ تلاش دوباره", actualStateOnly: "فقط وضعیت واقعی شبکه",
-    protectedRoute: "مسیر محافظت‌شده", selectedLocation: "موقعیت انتخاب‌شده", change: "تغییر", connectionMode: "حالت اتصال", systemProxy: "پروکسی سیستم", fullVpn: "VPN کامل", exitIp: "IP خروجی", accountQuota: "سهمیه حساب", monthlyData: "داده ماهانه", remaining: "باقی‌مانده", allAccounts: "همه حساب‌ها", liveTraffic: "ترافیک زنده", currentSession: "نشست فعلی", openObservatory: "باز کردن رصدخانه", download: "دریافت", upload: "ارسال", sessionTotal: "مجموع نشست", liveOneSecond: "زنده · نمونه‌های یک‌ثانیه‌ای", protectionMode: "حالت حفاظت", chooseTrafficRoute: "نحوه خروج ترافیک از این دستگاه را انتخاب کنید.",
+    protectedRoute: "مسیر محافظت‌شده", selectedLocation: "موقعیت انتخاب‌شده", change: "تغییر", connectionMode: "حالت اتصال", systemProxy: "پروکسی سیستم", fullVpn: "VPN کامل", exitIp: "IP خروجی", accountQuota: "سهمیه حساب", monthlyData: "داده ماهانه", remaining: "باقی‌مانده", used: "مصرف‌شده", allAccounts: "همه حساب‌ها", liveTraffic: "ترافیک زنده", currentSession: "نشست فعلی", openObservatory: "باز کردن رصدخانه", download: "دریافت", upload: "ارسال", sessionTotal: "مجموع نشست", liveOneSecond: "زنده · نمونه‌های یک‌ثانیه‌ای", protectionMode: "حالت حفاظت", chooseTrafficRoute: "نحوه خروج ترافیک از این دستگاه را انتخاب کنید.",
     locationsEyebrow: "اطلس شبکه", locationsTitle: "موقعیت خود را انتخاب کنید.", locationsLead: "یک مسیر واقعی سرور را انتخاب کنید. تأخیر فقط در صورت درخواست اندازه‌گیری می‌شود.", measureLatency: "اندازه‌گیری تأخیر", searchLocations: "جست‌وجوی کشور یا شهر", serverDataActual: "اطلاعات سرور از برنامه", loadingServers: "در حال بارگذاری سرورها…", couldNotLoadServers: "بارگذاری سرورها ممکن نشد.", noMatches: "موردی پیدا نشد", fastestAvailable: "سریع‌ترین سرور موجود", cities: "شهر", city: "شهر", timeout: "پایان زمان",
-    statisticsEyebrow: "رصدخانه شبکه", statisticsTitle: "ببینید زئوس چه چیزی را حمل می‌کند.", statisticsLead: "اندازه‌گیری زنده نشست فعلی از تونل موجود.", networkAnalytics: "تحلیل شبکه", analyticsTitle: "یک نمای یکپارچه از فعالیت شبکه شما.", analyticsLead: "مقصدهای ثبت‌شده و اندازه‌گیری زنده تونل؛ جدا و واقعی.", overview: "نمای کلی", totalUploaded: "مجموع ارسال", totalDownloaded: "مجموع دریافت", totalTraffic: "مجموع ترافیک", destinationIPs: "IPهای مقصد", destinationCountries: "کشورهای مقصد", activeSession: "نشست فعال", recordedUsage: "مصرف ثبت‌شده", detectedRecords: "شناسایی‌شده در مقصدهای ثبت‌شده", countryMetadataUnavailable: "فراداده در دسترس نیست", countryMetadataDetail: "API مصرف مقصدها را ثبت می‌کند، اما غنی‌سازی مطمئن کشور را ارائه نمی‌دهد.", trafficDistribution: "توزیع ترافیک", uploadDownloadMix: "مقایسه ارسال و دریافت", destinationDistribution: "توزیع مقصدها", relativeDestinationShare: "سهم نسبی ترافیک بر اساس مقصد", topDestinations: "مقصدهای برتر ثبت‌شده", countryDistribution: "توزیع کشورها", dataBoundary: "مرز داده", ipObservatory: "رصدخانه آدرس IP", destinationRecords: "رکوردهای مقصد ثبت‌شده", hostRecordsOnly: "نام میزبان و IP از دفتر مصرف", searchIpHostname: "جست‌وجوی IP یا نام میزبان", sortBy: "مرتب‌سازی بر اساس", sortTraffic: "حجم ترافیک", sortDestination: "مقصد", sortIp: "آدرس IP", sortCountryUnavailable: "کشور (در دسترس نیست)", destination: "مقصد", ipAddress: "آدرس IP", country: "کشور", traffic: "ترافیک", breakdown: "تفکیک", relativeShare: "سهم", ipTag: "IP", hostTag: "میزبان", liveSession: "نشست زنده", sessionTraffic: "ترافیک نشست", notConnected: "نشست فعالی وجود ندارد", oneSecondSamples: "نمونه‌های ۱ ثانیه‌ای", combinedTraffic: "ترافیک ترکیبی", chartAwaiting: "نمونه‌های زنده هنگام فعال بودن تونل نمایش داده می‌شوند.", downloadRate: "سرعت دریافت", uploadRate: "سرعت ارسال", sessionDuration: "مدت نشست", quotaRemaining: "سهمیه باقی‌مانده", historyBoundary: "مرز تاریخچه", historyUnavailable: "سری زمانی تاریخی در دسترس نیست", historyUnavailableDetail: "این نسخه نمونه‌های زنده نشست و مقصدهای ثبت‌شده را دارد، نه داده‌های روزانه، هفتگی یا ماهانه.", recordedDestinations: "مقصدهای ثبت‌شده", whereTrafficWent: "ترافیک ثبت‌شده به کجا رفته است.", retainedUsage: "داده مصرف نگه‌داری‌شده", destinationNote: "مجموع تجمعی مقصدها با آخرین فعالیت؛ نه تاریخچه سری زمانی.", windowsApplications: "برنامه‌های ویندوز", applicationTraffic: "ترافیک برنامه‌ها", windowsOnly: "فقط ویندوز",
+    statisticsEyebrow: "رصدخانه شبکه", statisticsTitle: "ببینید زئوس چه چیزی را حمل می‌کند.", statisticsLead: "اندازه‌گیری زنده نشست فعلی از تونل موجود.", networkAnalytics: "تحلیل شبکه", analyticsTitle: "یک نمای یکپارچه از فعالیت شبکه شما.", analyticsLead: "مقصدهای ثبت‌شده و اندازه‌گیری زنده تونل؛ جدا و واقعی.", overview: "نمای کلی", totalUploaded: "مجموع ارسال", totalDownloaded: "مجموع دریافت", totalTraffic: "مجموع ترافیک", destinationIPs: "IPهای مقصد", destinationCountries: "کشورهای مقصد", activeSession: "نشست فعال", recordedUsage: "مصرف ثبت‌شده", detectedRecords: "شناسایی‌شده در مقصدهای ثبت‌شده", countryMetadataUnavailable: "فراداده در دسترس نیست", countryMetadataDetail: "API مصرف مقصدها را ثبت می‌کند، اما غنی‌سازی مطمئن کشور را ارائه نمی‌دهد.", trafficDistribution: "توزیع ترافیک", uploadDownloadMix: "مقایسه ارسال و دریافت", destinationDistribution: "توزیع مقصدها", relativeDestinationShare: "سهم نسبی ترافیک بر اساس مقصد", topDestinations: "مقصدهای برتر ثبت‌شده", countryDistribution: "توزیع کشورها", dataBoundary: "مرز داده", ipObservatory: "رصدخانه آدرس IP", destinationRecords: "رکوردهای مقصد ثبت‌شده", hostRecordsOnly: "نام میزبان و IP از دفتر مصرف", searchIpHostname: "جست‌وجوی IP یا نام میزبان", sortBy: "مرتب‌سازی بر اساس", sortTraffic: "حجم ترافیک", sortDestination: "مقصد", sortIp: "آدرس IP", sortCountryUnavailable: "کشور (در دسترس نیست)", destination: "مقصد", ipAddress: "آدرس IP", country: "کشور", traffic: "ترافیک", breakdown: "تفکیک", relativeShare: "سهم", ipTag: "IP", hostTag: "میزبان", liveSession: "نشست زنده", sessionTraffic: "ترافیک نشست", notConnected: "نشست فعالی وجود ندارد", oneSecondSamples: "نمونه‌های ۱ ثانیه‌ای", combinedTraffic: "ترافیک ترکیبی", combinedRate: "سرعت مجموع ارسال و دریافت", chartAwaiting: "نمونه‌های زنده هنگام فعال بودن تونل نمایش داده می‌شوند.", downloadRate: "سرعت دریافت", uploadRate: "سرعت ارسال", sessionDuration: "مدت نشست", quotaRemaining: "سهمیه باقی‌مانده", historyBoundary: "مرز تاریخچه", historyUnavailable: "سری زمانی تاریخی در دسترس نیست", historyUnavailableDetail: "این نسخه نمونه‌های زنده نشست و مقصدهای ثبت‌شده را دارد، نه داده‌های روزانه، هفتگی یا ماهانه.", recordedDestinations: "مقصدهای ثبت‌شده", whereTrafficWent: "ترافیک ثبت‌شده به کجا رفته است.", retainedUsage: "داده مصرف نگه‌داری‌شده", destinationNote: "مجموع تجمعی مقصدها با آخرین فعالیت؛ نه تاریخچه سری زمانی.", windowsApplications: "برنامه‌های ویندوز", applicationTraffic: "ترافیک برنامه‌ها", windowsOnly: "فقط ویندوز",
     activityEyebrow: "دفتر فعالیت", activityTitle: "گزارش واقعی برنامه.", activityLead: "لاگ‌ها و اعلان‌های برنامه — بدون تاریخچه ساختگی.", copyLogs: "کپی لاگ‌ها", applicationLogs: "لاگ‌های برنامه", diagnosticRecord: "گزارش عیب‌یابی", openLogFile: "باز کردن فایل لاگ", logsEmpty: "برای بارگذاری گزارش فعلی، لاگ‌ها را باز کنید.", destinationUsage: "مصرف مقصدها", searchDestinations: "جست‌وجوی مقصدها", total: "مجموع", clearHistory: "پاک‌کردن تاریخچه", usageUnavailable: "داده مصرف در دسترس نیست", usageUnavailableDetail: "برنامه نتوانست مصرف مقصدهای نگه‌داری‌شده را بخواند.", retryUsage: "تلاش دوباره برای مصرف", logsUnavailable: "لاگ‌ها در دسترس نیستند", logsUnavailableDetail: "برنامه نتوانست گزارش عیب‌یابی را بخواند.", retryLogs: "تلاش دوباره برای لاگ‌ها",
     settingsEyebrow: "اتاق کنترل", settingsTitle: "نحوه حفاظت زئوس را تنظیم کنید.", settingsLead: "تنظیمات اتصال، مسیریابی، شروع و ظاهر.", accounts: "حساب‌ها", accountsTitle: "حساب‌های موزیلا", addAccount: "افزودن حساب دیگر", connection: "اتصال", connectionSettings: "رفتار اتصال", autoConnect: "اتصال هنگام شروع", autoConnectDetail: "با شروع زئوس، خودکار دوباره متصل شود.", autoSwitch: "تعویض خودکار حساب", autoSwitchDetail: "وقتی سهمیه یک حساب تمام شد از حساب بعدی استفاده شود.", startAtLogin: "شروع هنگام ورود", startWithWindows: "شروع با ویندوز", openAtLogin: "باز شدن هنگام ورود", autostartDetail: "زئوس هنگام ورود شما خودکار اجرا شود.", killSwitch: "کلید قطع اضطراری", killSwitchDetail: "اگر VPN قطع شد، ترافیک را تا اتصال دوباره مسدود کند.", routing: "مسیریابی", routingSettings: "مرزهای ترافیک", bypassIran: "عبور مستقیم از سایت‌های ایرانی", bypassIranDetail: "دامنه‌های .ir مستقیم متصل می‌شوند.", bypassLan: "عبور مستقیم از شبکه محلی", bypassLanDetail: "پرینترها، روترها و شبکه محلی مستقیم می‌مانند.", bypassLanUnsupported: "برای عبور مستقیم مسیرهای شبکه محلی در اندروید، نسخه ۱۳ یا جدیدتر لازم است.", fullVpnApps: "برنامه‌های VPN کامل", allApps: "همه برنامه‌ها", selectedOnly: "فقط انتخاب‌شده‌ها", exceptSelected: "به‌جز انتخاب‌شده‌ها", chooseApps: "انتخاب برنامه‌ها", searchApps: "جست‌وجوی برنامه‌ها", antiFiltering: "ضدفیلتر", antiFilteringSettings: "جزئیات انتقال", tlsFragmentation: "قطعه‌قطعه‌سازی TLS", tlsFragmentationDetail: "نام سرورها را از فیلتر SNI پنهان می‌کند.", tlsAuto: "خودکار", tlsAlways: "همیشه (SNI)", tlsFirstByte: "بایت اول", tlsOff: "خاموش", localProxyPort: "پورت پروکسی محلی", localProxyPortDetail: "HTTP و SOCKS5 برای برنامه‌های دیگر.", appearance: "ظاهر", appearanceTitle: "مرکز فرماندهی آرام‌تر.", language: "زبان", languageDetail: "جهت رابط را انتخاب کنید.", english: "English", persian: "فارسی", visualEffects: "جلوه‌های محیطی", visualEffectsDetail: "حرکت و نورپردازی تزئینی را کاهش دهید.", troubleshooting: "عیب‌یابی", diagnosticsTitle: "عیب‌یابی", viewLogs: "مشاهده لاگ‌ها", openStatistics: "باز کردن آمار",
     confirmation: "تأیید", confirm: "تأیید", elevatedAccess: "دسترسی سطح بالا", administratorNeeded: "دسترسی مدیر لازم است", restartAsAdmin: "راه‌اندازی دوباره به‌عنوان مدیر", useSystemProxy: "استفاده از پروکسی سیستم",
@@ -50,6 +50,7 @@ let servers = [];
 let latency = {};
 let openCountry = null;
 let timerHandle = null;
+let liveQuotaSample = null;
 let lastStats = { up: 0, down: 0, upRate: 0, downRate: 0, quotaLimit: 0, quotaLeft: 0 };
 let previousStats = { up: 0, down: 0 };
 let sessionSamples = [];
@@ -71,6 +72,7 @@ let logsLoaded = false;
 let logsLoading = false;
 let logsError = "";
 let confirmResolve = null;
+const dialogReturnFocus = new Map();
 let toastTimer = null;
 let introFinished = false;
 let introTimer = null;
@@ -718,25 +720,36 @@ function showIntroStatus(statusKey, detailKey) {
   if (status) status.textContent = t(statusKey);
   if (detail) detail.textContent = t(detailKey);
 }
+// Keep modal focus inside the active dialog and return it to its opener.
+function openDialog(dialog, initial) {
+  if (dialog.hidden) dialogReturnFocus.set(dialog, document.activeElement);
+  dialog.hidden = false;
+  (initial || dialog).focus();
+}
+function closeDialog(dialog) {
+  if (dialog.hidden) return;
+  dialog.hidden = true;
+  const opener = dialogReturnFocus.get(dialog);
+  dialogReturnFocus.delete(dialog);
+  if (opener && opener.isConnected && typeof opener.focus === "function") opener.focus();
+}
 function closePanel() {
   $("#panel-scrim").hidden = true;
-  $("#panel-apps").hidden = true;
+  closeDialog($("#panel-apps"));
+}
+function finishConfirm(result) {
+  const resolve = confirmResolve;
+  confirmResolve = null;
+  closeDialog($("#modal-confirm"));
+  if (resolve) resolve(result);
 }
 function askConfirm(message, title = t("confirmation")) {
   $("#confirm-title").textContent = title;
   $("#confirm-message").textContent = message;
-  $("#modal-confirm").hidden = false;
-  return new Promise((resolve) => { confirmResolve = resolve; });
-}
-
-const PERSIAN_MONTHS = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
-const ENGLISH_MONTHS = ["Farvardin", "Ordibehesht", "Khordad", "Tir", "Mordad", "Shahrivar", "Mehr", "Aban", "Azar", "Dey", "Bahman", "Esfand"];
-function renderSolarMonthRing() {
-  const ring = $("#solar-month-ring");
-  if (!ring) return;
-  const months = locale === "fa" ? PERSIAN_MONTHS : ENGLISH_MONTHS;
-  Array.from(ring.querySelectorAll(".solar-month b")).forEach((el, index) => { el.textContent = months[index]; });
-  ring.setAttribute("aria-label", locale === "fa" ? `ماه‌های تقویم فارسی: ${PERSIAN_MONTHS.join("، ")}` : `Persian calendar months: ${ENGLISH_MONTHS.join(", ")}`);
+  return new Promise((resolve) => {
+    confirmResolve = resolve;
+    openDialog($("#modal-confirm"), $("#btn-confirm-no"));
+  });
 }
 
 function applyLocale() {
@@ -753,7 +766,6 @@ function applyLocale() {
   }
   if ($("#set-language")) $("#set-language").value = locale;
   if ($("#set-effects")) $("#set-effects").checked = effectsEnabled;
-  renderSolarMonthRing();
   renderMapLocale();
   updateBreadcrumb();
 }
@@ -780,7 +792,12 @@ function updateBreadcrumb() {
 function updateNavigation() {
   document.body.dataset.screen = currentScreen;
   for (const el of $$(".screen")) el.hidden = el.dataset.screen !== currentScreen;
-  for (const el of $$(".nav-link[data-screen]")) el.classList.toggle("active", el.dataset.screen === currentScreen);
+  for (const el of $$(".nav-link[data-screen]")) {
+    const active = el.dataset.screen === currentScreen;
+    el.classList.toggle("active", active);
+    if (active) el.setAttribute("aria-current", "page");
+    else el.removeAttribute("aria-current");
+  }
   updateBreadcrumb();
 }
 function navigate(screen, load = true) {
@@ -915,17 +932,20 @@ function renderHome() {
   const visualStatus = hasError && status === "disconnected" ? "error" : status;
   const statusKeys = {
     disconnected: ["stateDisconnected", "tapToConnect", "connect"],
-    connecting: ["stateConnecting", "securingConnection", "connect"],
+    connecting: ["stateConnecting", "securingConnection", "stateConnecting"],
     connected: ["stateConnected", "protectedNow", "disconnect"],
-    disconnecting: ["stateDisconnecting", "disconnecting", "disconnect"],
+    disconnecting: ["stateDisconnecting", "disconnecting", "stateDisconnecting"],
     reconnecting: ["stateReconnecting", "reconnecting", "disconnect"],
   }[status] || ["stateDisconnected", "tapToConnect", "connect"];
   $("#orb").dataset.status = visualStatus;
+  document.body.dataset.connectionStatus = visualStatus;
+  $("#orb").disabled = status === "connecting" || status === "disconnecting";
+  $("#orb").setAttribute("aria-busy", String(status === "connecting" || status === "disconnecting"));
   $("#orb").setAttribute("aria-label", t(statusKeys[2]));
   $("#command-label").textContent = t(statusKeys[2]);
-  $("#status-text").textContent = t(statusKeys[0]);
+  $("#status-text").textContent = t(visualStatus === "error" ? "error" : statusKeys[0]);
   $("#status-sub").textContent = hasError ? snap.error : status === "reconnecting" && snap.settings.kill_switch ? `${t("reconnecting")} · ${t("killSwitch")}` : t(statusKeys[1]);
-  $("#home-connection-label").textContent = t(statusKeys[0]);
+  $("#home-connection-label").textContent = t(visualStatus === "error" ? "error" : statusKeys[0]);
   $("#status-mode").textContent = t(snap.settings.mode === "tun" ? "fullVpn" : "systemProxy").toUpperCase();
   $("#home-route-mode").textContent = t(snap.settings.mode === "tun" ? "fullVpn" : "systemProxy");
   document.body.classList.toggle("connected", status === "connected");
@@ -957,26 +977,9 @@ function renderHome() {
   ping.className = `ping ${pingClass(locationPing)}`;
   ping.textContent = pingText(locationPing);
   ping.hidden = locationPing == null;
-  $("#exit-ip").textContent = status === "connected" ? (snap.exitIp || t("checkingData")) : "—";
+  $("#exit-ip").textContent = status === "connected" ? (snap.exitIp || "—") : "—";
 
-  const accounts = snap.accounts || [];
-  const active = accounts.find((account) => account.active) || {};
-  const limit = snap.quotaLimit || active.quotaLimit || 0;
-  const left = snap.quotaLimit ? snap.quotaLeft : active.quotaLeft || 0;
-  if (limit > 0) {
-    $("#quota-text").textContent = `${fmtBytes(left)} ${t("remaining").toLowerCase()} · ${fmtBytes(limit)}`;
-    $("#quota-fill").style.width = `${Math.min(100, ((limit - left) / limit) * 100).toFixed(1)}%`;
-  } else {
-    $("#quota-text").textContent = t("noQuota");
-    $("#quota-fill").style.width = "0";
-  }
-  const known = accounts.filter((account) => account.quotaLimit > 0);
-  $("#total-row").hidden = accounts.length < 2 || !known.length;
-  if (known.length) {
-    const totalLeft = known.reduce((sum, account) => sum + (account.exhausted ? 0 : account.quotaLeft), 0);
-    const totalLimit = known.reduce((sum, account) => sum + account.quotaLimit, 0);
-    $("#total-text").textContent = `${fmtBytes(totalLeft)} / ${fmtBytes(totalLimit)}`;
-  }
+  renderHomeQuota();
   const banner = $("#banner");
   if (status === "reconnecting" && snap.settings.kill_switch) {
     banner.className = "banner info";
@@ -994,6 +997,44 @@ function renderHome() {
     $("#banner-elevate").onclick = elevate;
   } else banner.hidden = true;
   renderLiveMetrics();
+}
+
+// Stats has no unlimited marker: a non-positive limit means unknown, not unlimited.
+function renderHomeQuota() {
+  if (!snap) return;
+  const accounts = snap.accounts || [];
+  const active = accounts.find((account) => account.active) || {};
+  const sample = liveQuotaSample && snap.status === "connected" ? liveQuotaSample : null;
+  const rawLimit = sample ? sample.limit : (snap.quotaLimit || active.quotaLimit);
+  const rawLeft = sample ? sample.left : (snap.quotaLimit ? snap.quotaLeft : active.quotaLeft);
+  const limit = Number(rawLimit), left = Number(rawLeft);
+  const known = rawLimit != null && rawLeft != null && Number.isFinite(limit) && Number.isFinite(left) && limit > 0 && left >= 0;
+  const meter = $("#quota-meter"), ring = $("#quota-ring");
+  $("#quota-text").textContent = known ? fmtBytes(left) : "—";
+  $("#quota-limit").textContent = known ? fmtBytes(limit) : "—";
+  $("#quota-used").textContent = known ? fmtBytes(Math.max(0, limit - left)) : "—";
+  // Remove the arc immediately when a value becomes unknown or zero; a
+  // lingering animated arc would imply a quota that is no longer available.
+  ring.style.transition = known && left > 0 ? "" : "none";
+  ring.style.strokeDasharray = known ? `${Math.max(0, Math.min(100, left / limit * 100)).toFixed(2)} 100` : "0 100";
+  ring.style.opacity = known && left > 0 ? "1" : "0";
+  if (known) {
+    meter.setAttribute("role", "meter");
+    meter.setAttribute("aria-valuemin", "0"); meter.setAttribute("aria-valuemax", "100");
+    meter.setAttribute("aria-valuenow", String(Math.max(0, Math.min(100, Math.round(left / limit * 100)))));
+    meter.setAttribute("aria-valuetext", `${t("remaining")}: ${fmtBytes(left)}; ${t("total")}: ${fmtBytes(limit)}; ${t("used")}: ${fmtBytes(Math.max(0, limit - left))}`);
+  } else {
+    meter.setAttribute("role", "group");
+    for (const attr of ["aria-valuemin", "aria-valuemax", "aria-valuenow", "aria-valuetext"]) meter.removeAttribute(attr);
+    $("#quota-text").textContent = t("noQuota");
+  }
+  const knownAccounts = accounts.filter((account) => account.quotaLimit > 0);
+  $("#total-row").hidden = accounts.length < 2 || !knownAccounts.length;
+  if (knownAccounts.length) {
+    const totalLeft = knownAccounts.reduce((sum, account) => sum + (account.exhausted ? 0 : account.quotaLeft), 0);
+    const totalLimit = knownAccounts.reduce((sum, account) => sum + account.quotaLimit, 0);
+    $("#total-text").textContent = `${fmtBytes(totalLeft)} / ${fmtBytes(totalLimit)}`;
+  }
 }
 
 function renderSessionDuration() {
@@ -1025,29 +1066,35 @@ function renderLiveMetrics() {
 }
 
 function renderLiveChart() {
-  const empty = $("#chart-empty");
-  const line = $("#chart-line");
-  const area = $("#chart-area");
-  if (!line || !area || sessionSamples.length < 2) {
-    if (empty) empty.hidden = false;
-    if (line) line.hidden = true;
-    if (area) area.hidden = true;
+  const charts = [
+    { empty: $("#chart-empty"), line: $("#chart-line"), area: $("#chart-area") },
+    { empty: $("#home-chart-empty"), line: $("#home-chart-line"), area: $("#home-chart-area") },
+  ];
+  if (sessionSamples.length < 2) {
+    for (const chart of charts) {
+      if (chart.empty) chart.empty.hidden = false;
+      if (chart.line) chart.line.setAttribute("hidden", "");
+      if (chart.area) chart.area.setAttribute("hidden", "");
+    }
     return;
   }
   const width = 720;
   const height = 190;
   const max = Math.max(...sessionSamples.map((sample) => sample.upRate + sample.downRate), 1);
+  const first = sessionSamples[0].at;
+  const span = sessionSamples[sessionSamples.length - 1].at - first;
   const points = sessionSamples.map((sample, index) => {
-    const x = (index / Math.max(1, sessionSamples.length - 1)) * width;
+    const fraction = span > 0 ? Math.max(0, Math.min(1, (sample.at - first) / span)) : index / (sessionSamples.length - 1);
+    const x = fraction * width;
     const y = height - ((sample.upRate + sample.downRate) / max) * (height - 16) - 8;
     return [x, y];
   });
   const d = points.map(([x, y], index) => `${index ? "L" : "M"}${x.toFixed(1)} ${y.toFixed(1)}`).join(" ");
-  line.setAttribute("d", d);
-  area.setAttribute("d", `${d} L ${width} ${height} L 0 ${height} Z`);
-  line.hidden = false;
-  area.hidden = false;
-  empty.hidden = true;
+  for (const chart of charts) {
+    if (chart.line) { chart.line.setAttribute("d", d); chart.line.removeAttribute("hidden"); }
+    if (chart.area) { chart.area.setAttribute("d", `${d} L ${width} ${height} L 0 ${height} Z`); chart.area.removeAttribute("hidden"); }
+    if (chart.empty) chart.empty.hidden = true;
+  }
 }
 
 function renderSettings() {
@@ -1360,7 +1407,7 @@ async function openAppsPanel() {
   for (const button of $$("#set-apptunnel button")) button.classList.toggle("active", button.dataset.mode === appMode);
   $("#app-search").value = "";
   $("#panel-scrim").hidden = false;
-  $("#panel-apps").hidden = false;
+  openDialog($("#panel-apps"), $("#app-search"));
   if (!installedApps) {
     $("#app-list").innerHTML = `<div class="list-msg">${esc(t("loading"))}</div>`;
     try { installedApps = await api().GetApps(); } catch (error) { installedApps = []; toast(errText(error)); }
@@ -1392,13 +1439,15 @@ function showAdminModal(reason) {
   adminReason = reason;
   $("#admin-reason").textContent = reason === "killswitch" ? t("adminKill") : t("adminTun");
   $("#btn-use-proxy").textContent = reason === "killswitch" ? t("useSystemProxy") : t("useSystemProxy");
-  $("#modal-admin").hidden = false;
+  openDialog($("#modal-admin"), $("#btn-use-proxy"));
 }
 async function elevate() {
   try { await api().RestartAsAdmin(); } catch (error) { toast(errText(error)); }
 }
 async function refreshSnapshot() {
+  const previous = snap;
   snap = await api().GetSnapshot();
+  if (!previous || previous.account !== snap.account || previous.email !== snap.email || snap.status !== "connected") liveQuotaSample = null;
   render();
   return snap;
 }
@@ -1571,19 +1620,36 @@ function wire() {
 
   $("#btn-elevate").onclick = elevate;
   $("#btn-use-proxy").onclick = async () => {
-    $("#modal-admin").hidden = true;
+    closeDialog($("#modal-admin"));
     try {
       if (adminReason === "killswitch") { await api().SaveSettings({ ...snap.settings, kill_switch: false }); await refreshSnapshot(); toggleConnection(); }
       else await api().SetMode("proxy");
     } catch (error) { toast(errText(error)); }
   };
-  $("#modal-admin").onclick = (event) => { if (event.target.id === "modal-admin") $("#modal-admin").hidden = true; };
-  $("#btn-confirm-yes").onclick = () => { $("#modal-confirm").hidden = true; if (confirmResolve) confirmResolve(true); confirmResolve = null; };
-  $("#btn-confirm-no").onclick = () => { $("#modal-confirm").hidden = true; if (confirmResolve) confirmResolve(false); confirmResolve = null; };
-  $("#modal-confirm").onclick = (event) => { if (event.target.id === "modal-confirm") { $("#modal-confirm").hidden = true; if (confirmResolve) confirmResolve(false); confirmResolve = null; } };
+  $("#modal-admin").onclick = (event) => { if (event.target.id === "modal-admin") closeDialog($("#modal-admin")); };
+  $("#btn-confirm-yes").onclick = () => finishConfirm(true);
+  $("#btn-confirm-no").onclick = () => finishConfirm(false);
+  $("#modal-confirm").onclick = (event) => { if (event.target.id === "modal-confirm") finishConfirm(false); };
   $("#intro-retry").onclick = () => { $("#intro-error").hidden = true; bootstrap(); };
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") { closePanel(); $("#modal-admin").hidden = true; if (!$("#modal-confirm").hidden) { $("#modal-confirm").hidden = true; if (confirmResolve) confirmResolve(false); confirmResolve = null; } }
+    const dialog = [$("#modal-confirm"), $("#modal-admin"), $("#panel-apps")].find((item) => !item.hidden);
+    if (!dialog) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      if (dialog.id === "modal-confirm") finishConfirm(false);
+      else if (dialog.id === "panel-apps") closePanel();
+      else closeDialog(dialog);
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const focusable = Array.from(dialog.querySelectorAll('button, input, select, textarea, a[href], [tabindex]'))
+      .filter((el) => !el.disabled && el.tabIndex >= 0 && !el.closest("[hidden]"));
+    if (!focusable.length) { event.preventDefault(); dialog.focus(); return; }
+    const index = focusable.indexOf(document.activeElement);
+    if (index < 0 || (event.shiftKey && index === 0) || (!event.shiftKey && index === focusable.length - 1)) {
+      event.preventDefault();
+      focusable[event.shiftKey ? focusable.length - 1 : 0].focus();
+    }
   });
   document.addEventListener("contextmenu", (event) => { if (!event.target.closest("input, .logs")) event.preventDefault(); });
 }
@@ -1592,6 +1658,7 @@ function handleState(state) {
   const previous = snap;
   snap = state;
   const wasConnected = previous && previous.status === "connected";
+  if (!previous || previous.account !== snap.account || previous.email !== snap.email || snap.status !== "connected" || !wasConnected) liveQuotaSample = null;
   if (snap.status === "connected" && !wasConnected) { sessionSamples = []; previousStats = { up: 0, down: 0 }; lastStats = { up: 0, down: 0, upRate: 0, downRate: 0, quotaLimit: 0, quotaLeft: 0 }; sessionActive = true; }
   if (snap.status === "disconnected") { sessionActive = false; sessionSamples = []; lastStats = { up: 0, down: 0, upRate: 0, downRate: 0, quotaLimit: 0, quotaLeft: 0 }; }
   if (introFinished) render();
@@ -1604,7 +1671,8 @@ function handleStats(stats) {
   }
   previousStats = { up: stats.up || 0, down: stats.down || 0 };
   lastStats = stats;
-  if (introFinished) { renderLiveMetrics(); if (currentScreen === "statistics") renderStatistics(); }
+  liveQuotaSample = snap && snap.status === "connected" && Number.isFinite(stats.quotaLimit) && stats.quotaLimit > 0 && Number.isFinite(stats.quotaLeft) && stats.quotaLeft >= 0 ? { limit: Number(stats.quotaLimit), left: Number(stats.quotaLeft) } : null;
+  if (introFinished) { renderHomeQuota(); renderLiveMetrics(); if (currentScreen === "statistics") renderStatistics(); }
 }
 
 async function init() {
